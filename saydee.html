@@ -1,8 +1,9 @@
     <!DOCTYPE html>   
-    <html lang="en"> 
+    <html lang='en'> 
     <head> 							<!-- VERSION 0.9 PRE-RELEASE -->
-        <meta charset="UTF-8"> 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta charset='UTF-8'> 
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'> 
+  <link rel='icon' type='image/x-icon' href='/favicon.ico'>
         <title>Saydee's Garden</title> 
         <style> 
             /* CSS styles go here */ 
@@ -66,134 +67,133 @@
 			}
         </style> 
     </head> 
-	
-	
     <body> 
      
         <h1>Saydee's Garden</h1> 
 		
 		<!--SAVE/LOAD BUTTONS-->
-		<div style="border-style:solid;border-width:1px;position:absolute;top:10%;right:5%;display:inline-block"> 
-			<button id="save" class="SLI">save</button>
-			<button id="load" class="SLI">load</button>
-			<button id="info" class="SLI">info</button>
+		<div style='border-style:solid;border-width:1px;position:absolute;top:10%;right:5%;display:inline-block'> 
+			<button id='save' class='SLI'>save</button>
+			<button id='load' class='SLI'>load</button>
+			<button id='info' class='SLI'>info</button>
 		</div>
      
-		<div id="messages" style="position:fixed;top:10%;background-color:#FFDD69;display:inline-block;left:20%;border-style:groove;border-color:#dddd66"> <!--messages for my Say-->
+		<div id='messages' style='position:fixed;top:10%;background-color:#FFDD69;display:inline-block;left:20%;border-style:groove;border-color:#dddd66'> <!--messages for my Say-->
 		</div>
 		
-		<div id="Sayyy" style="border-style:solid;border-width:1px;border-color:#FFAAAA;background-color:#FDED79">
-			<div id="Sayzone" style="align:left;display:inline-block"> <!--Say icon here-->
+		<div id='Sayyy' style='border-style:solid;border-width:1px;border-color:#FFAAAA;background-color:#FDED79'>
+			<div id='Sayzone' style='align:left;display:inline-block'> <!--Say icon here-->
 				👩🏻
 			</div>
-			<div id="saystats">
-				<p id="lipstickcounter" class="counterClass" style="display:none">
-				<p id="smoochcounter" class="counterClass">
-				<p id="happypointscounter" class="counterClass">
-				<p class="counterClass"><b>Say's Stats:</b>
+			<div id='saystats'>
+				<p id='lipstickcounter' class='counterClass' style='display:none'>
+				<p id='smoochcounter' class='counterClass'>
+				<p id='happypointscounter' class='counterClass'>
+				<p class='counterClass'><b>Say's Stats:</b>
 			</div>
-			<div id="smoochgarden" style="display:inline-block"></div>
+			<div id='smoochgarden' style='display:inline-block'></div>
 		</div>
 		
 		
-		<div id="inventory" style="display:none;float:right;width=100%">			<!-- ADD COUNTER FOR EACH ITEM -->
-			<p class='counterClass' style="float:left"><b>Inventory:</b>
-			<p id='monkeycounter' class='counterClass' style='display:none'>		<!--the text is added below-->
-			<p id='tigercounter' class='counterClass' style='display:none'>
-			<p id='jackasscounter' class='counterClass' style='display:none'>
-			<p id='horsecounter' class='counterClass' style='display:none'>
-			<p id='zebracounter' class='counterClass' style='display:none'>
-			<p id='deercounter' class='counterClass' style='display:none'>
-			<p id='cowcounter' class='counterClass' style='display:none'>
-			<p id='pigcounter' class='counterClass' style='display:none'>
-			<p id='sheepcounter' class='counterClass' style='display:none'>
-			<p id='camelcounter' class='counterClass' style='display:none'>
-			<p id='giraffecounter' class='counterClass' style='display:none'>
-			<p id='elephantcounter' class='counterClass' style='display:none'>
-			<p id='hedgehogcounter' class='counterClass' style='display:none'>
-			<p id='batcounter' class='counterClass' style='display:none'>
-			<p id='slothcounter' class='counterClass' style='display:none'>
-			<p id='ottercounter' class='counterClass' style='display:none'>
-			<p id='kangaroocounter' class='counterClass' style='display:none'>
-			<p id='hatchlingcounter' class='counterClass' style='display:none'>
-			<p id='babycounter' class='counterClass' style='display:none'>
-			<p id='songbirdcounter' class='counterClass' style='display:none'>
-			<p id='penguincounter' class='counterClass' style='display:none'>
-			<p id='dovecounter' class='counterClass' style='display:none'>
-			<p id='swancounter' class='counterClass' style='display:none'>
-			<p id='owlcounter' class='counterClass' style='display:none'>
-			<p id='dodocounter' class='counterClass' style='display:none'>
-			<p id='flamingocounter' class='counterClass' style='display:none'>
-			<p id='peacockcounter' class='counterClass' style='display:none'>
-			<p id='blackbirdcounter' class='counterClass' style='display:none'>
-			<p id='chickencounter' class='counterClass' style='display:none'>
-			<p id='goosecounter' class='counterClass' style='display:none'>
-			<p id='phoenixcounter' class='counterClass' style='display:none'>
-			<p id='lizardcounter' class='counterClass' style='display:none'>
-			<p id='dragoncounter' class='counterClass' style='display:none'>
-			<p id='whalecounter' class='counterClass' style='display:none'>
-			<p id='dolphincounter' class='counterClass' style='display:none'>
-			<p id='sealcounter' class='counterClass' style='display:none'>
-			<p id='basiccounter' class='counterClass' style='display:none'>
-			<p id='tropicalcounter' class='counterClass' style='display:none'>
-			<p id='puffercounter' class='counterClass' style='display:none'>
-			<p id='sharkcounter' class='counterClass' style='display:none'>
-			<p id='octopuscounter' class='counterClass' style='display:none'>
-			<p id='jellyfishcounter' class='counterClass' style='display:none'>
-			<p id='beecounter' class='counterClass' style='display:none'>
-			<p id='shrimpcounter' class='counterClass' style='display:none'>
-			<p id='squidcounter' class='counterClass' style='display:none'>
-			<p id="birdfeedercounter" class="counterClass" style="display:none">
-			<p id="wateringcancounter" class="counterClass" style="display:none">
-			<p id="catcounter" class="counterClass" style="display:none">
-			<p id="dogcounter" class="counterClass" style="display:none">
-			<p id="bearcounter" class="counterClass" style="display:none">
-			<p id="turtlecounter" class="counterClass" style="display:none">
-			<p id="bunnycounter" class="counterClass" style="display:none">
-			<p id="starfishcounter" class="counterClass" style="display:none">
-			<p id="parrotcounter" class="counterClass" style="display:none">
-			<p id="duckcounter" class="counterClass" style="display:none">
-			<p id="cactuscounter" class="counterClass" style="display:none">
-			<p id="sunflowerscounter" class="counterClass" style="display:none">
-			<p id="rosescounter" class="counterClass" style="display:none">
-			<p id="tulipscounter" class="counterClass" style="display:none">
-			<p id="daisiescounter" class="counterClass">
-		</div>
+		<div id='inventory' style='display:none;float:right;width=100%'>			<!-- ADD COUNTER FOR EACH ITEM -->
+			<p class='counterClass' style='float:left'><b>Inventory:</b>
+	
+<p id='daisycounter' class='counterClass' style='display:none'>
+<p id='tulipcounter' class='counterClass' style='display:none'>
+<p id='rosecounter' class='counterClass' style='display:none'>
+<p id='sunflowercounter' class='counterClass' style='display:none'>
+<p id='cactuscounter' class='counterClass' style='display:none'>
+<p id='parrotcounter' class='counterClass' style='display:none'>
+<p id='duckcounter' class='counterClass' style='display:none'>
+<p id='catcounter' class='counterClass' style='display:none'>
+<p id='dogcounter' class='counterClass' style='display:none'>
+<p id='bearcounter' class='counterClass' style='display:none'>
+<p id='turtlecounter' class='counterClass' style='display:none'>
+<p id='bunnycounter' class='counterClass' style='display:none'>
+<p id='starfishcounter' class='counterClass' style='display:none'>
+<p id='wateringcancounter' class='counterClass' style='display:none'>
+<p id='birdfeedercounter' class='counterClass' style='display:none'>
+<p id='lipstickcounter' class='counterClass' style='display:none'>
+<p id='monkeycounter' class='counterClass' style='display:none'>
+<p id='tigercounter' class='counterClass' style='display:none'>
+<p id='jackasscounter' class='counterClass' style='display:none'>
+<p id='horsecounter' class='counterClass' style='display:none'>
+<p id='zebracounter' class='counterClass' style='display:none'>
+<p id='deercounter' class='counterClass' style='display:none'>
+<p id='cowcounter' class='counterClass' style='display:none'>
+<p id='pigcounter' class='counterClass' style='display:none'>
+<p id='sheepcounter' class='counterClass' style='display:none'>
+<p id='camelcounter' class='counterClass' style='display:none'>
+<p id='giraffecounter' class='counterClass' style='display:none'>
+<p id='elephantcounter' class='counterClass' style='display:none'>
+<p id='hedgehogcounter' class='counterClass' style='display:none'>
+<p id='batcounter' class='counterClass' style='display:none'>
+<p id='slothcounter' class='counterClass' style='display:none'>
+<p id='ottercounter' class='counterClass' style='display:none'>
+<p id='kangaroocounter' class='counterClass' style='display:none'>
+<p id='hatchlingcounter' class='counterClass' style='display:none'>
+<p id='babycounter' class='counterClass' style='display:none'>
+<p id='songbirdcounter' class='counterClass' style='display:none'>
+<p id='penguincounter' class='counterClass' style='display:none'>
+<p id='dovecounter' class='counterClass' style='display:none'>
+<p id='swancounter' class='counterClass' style='display:none'>
+<p id='owlcounter' class='counterClass' style='display:none'>
+<p id='dodocounter' class='counterClass' style='display:none'>
+<p id='flamingocounter' class='counterClass' style='display:none'>
+<p id='peacockcounter' class='counterClass' style='display:none'>
+<p id='blackbirdcounter' class='counterClass' style='display:none'>
+<p id='chickencounter' class='counterClass' style='display:none'>
+<p id='goosecounter' class='counterClass' style='display:none'>
+<p id='phoenixcounter' class='counterClass' style='display:none'>
+<p id='lizardcounter' class='counterClass' style='display:none'>
+<p id='dragoncounter' class='counterClass' style='display:none'>
+<p id='whalecounter' class='counterClass' style='display:none'>
+<p id='dolphincounter' class='counterClass' style='display:none'>
+<p id='sealcounter' class='counterClass' style='display:none'>
+<p id='bettacounter' class='counterClass' style='display:none'>
+<p id='tropicalcounter' class='counterClass' style='display:none'>
+<p id='pufferfishcounter' class='counterClass' style='display:none'>
+<p id='sharkcounter' class='counterClass' style='display:none'>
+<p id='octopuscounter' class='counterClass' style='display:none'>
+<p id='jellyfishcounter' class='counterClass' style='display:none'>
+<p id='beecounter' class='counterClass' style='display:none'>
+<p id='shrimpcounter' class='counterClass' style='display:none'>
+<p id='squidcounter' class='counterClass' style='display:none'>
+
+	</div>
 		
 		</br>
 		
-		<div id="actions" style="display:block"> <!--any abilities your character has-->
+		<div id='actions' style='display:block'> <!--any abilities your character has-->
 			<h3>Actions</h3>
-			<button id="smoochButton">Smooch!😗</button> 
-			<button id="waterButton" style="display:none">Water flowers</button>
-			<button id="loveButton" style="display:none">"I love you!"</button>
-			<button id="praiseButton" style="display:none">"You're a cutie!"</button>
+			<button id='smoochButton'>Smooch!😗</button> 
+			<button id='waterButton' style='display:none'>Water flowers</button>
+			<button id='loveButton' style='display:none'>'I love you!'</button>
+			<button id='praiseButton' style='display:none'>'You're a cutie!'</button>
 			
 		</div>
-		
+	
 	<!--           STORE               -->
 	<!--		add each item 			-->
 		
-		<div id="store" style="background-color:#FFAAAA;display:inline-block;float:right;width:40%">
-			<h3 style="float:left;display:inline-block">Store</h3> 				<h3 id="hpstorecounter" style="position:sticky;float:right;display:inline-block"></h4>
-			<div id="plantstore" style="background-color:#AAFFAA;display:inline-block">
-				<h4 style="color:#055505">Plants</h4>
-				<button id="daisyBuy"></button>
-				<button id="tulipBuy" style="display:none"></button>
-				<button id="roseBuy" style="display:none"></button>
-				<button id="sunflowerBuy" style="display:none"></button>
-				<button id="cactusBuy" style="display:none"></button>
-			</div>
-			<div id="animalstore" style="background-color:#FFFF99;display:none">
-				<h4 style="color:#555500">Animals</h4>
-				<button id="duckBuy" style="display:none"></button>			<!--text added via script-->
-				<button id="parrotBuy" style="display:none"></button>
-				<button id="starfishBuy" style="display:none"></button>
-				<button id="bunnyBuy" style="display:none"></button>
-				<button id="turtleBuy" style="display:none"></button>
-				<button id="bearBuy" style="display:none"></button>
-				<button id="dogBuy" style="display:none"></button>
-				<button id="catBuy" style="display:none"></button>
+		<div id='store' style='background-color:#FFAAAA;display:inline-block;float:right;width:40%'>
+			<h3 style='float:left;display:inline-block'>Store</h3> 				<h3 id='hpstorecounter' style='position:sticky;float:right;display:inline-block'></h4>
+				<button id='daisyBuy' style='display:none'></button>
+				<button id='tulipBuy' style='display:none'></button>
+				<button id='roseBuy' style='display:none'></button>
+				<button id='sunflowerBuy' style='display:none'></button>
+				<button id='cactusBuy' style='display:none'></button>
+				<button id='parrotBuy' style='display:none'></button>
+				<button id='duckBuy' style='display:none'></button>
+				<button id='catBuy' style='display:none'></button>
+				<button id='dogBuy' style='display:none'></button>
+				<button id='bearBuy' style='display:none'></button>
+				<button id='turtleBuy' style='display:none'></button>
+				<button id='bunnyBuy' style='display:none'></button>
+				<button id='starfishBuy' style='display:none'></button>
+				<button id='wateringcanBuy' style='display:none'></button>
+				<button id='birdfeederBuy' style='display:none'></button>
+				<button id='lipstickBuy' style='display:none'></button>
 				<button id='monkeyBuy' style='display:none'></button>
 				<button id='tigerBuy' style='display:none'></button>
 				<button id='jackassBuy' style='display:none'></button>
@@ -230,50 +230,53 @@
 				<button id='whaleBuy' style='display:none'></button>
 				<button id='dolphinBuy' style='display:none'></button>
 				<button id='sealBuy' style='display:none'></button>
-				<button id='basicBuy' style='display:none'></button>
+				<button id='bettaBuy' style='display:none'></button>
 				<button id='tropicalBuy' style='display:none'></button>
-				<button id='pufferBuy' style='display:none'></button>
+				<button id='pufferfishBuy' style='display:none'></button>
 				<button id='sharkBuy' style='display:none'></button>
 				<button id='octopusBuy' style='display:none'></button>
 				<button id='jellyfishBuy' style='display:none'></button>
 				<button id='beeBuy' style='display:none'></button>
 				<button id='shrimpBuy' style='display:none'></button>
-				<button id='squidBuy' style='display:none'></button>
 
+			<div id='flowersstore' style='background-color:#AAFFAA;display:inline-block'>
+				<h4 style='color:#055505'>Plants</h4>
 			</div>
-			<div id="stuffstore" style="background-color:#AAAAFF;display:none">
-				<h4 style="color:#050555">Stuff</h4>
-				<button id="lipstickBuy" style="display:none"></button>
-				<button id="wateringcanBuy" style="display:none"></button>
-				<button id="birdfeederBuy" style="display:none"></button>
+			<div id='animalsstore' style='background-color:#FFFF99;display:none'>
+				<h4 style='color:#555500'>Animals</h4>
+			</div>
+			<div id='stuffstore' style='background-color:#AAAAFF;display:none'>
+				<h4 style='color:#050555'>Stuff</h4>
 			</div>
 		</div>
 		
-		
-		<div id="garden" style="width:50%;float:left"> <!--all the things you buy will be displayed here-->
-		<div id="flowers" style="background-color:#dab080"></div>
-		<div id="animals" style="background-color:#dada80;border-style:double"></div>
-			<div id="aviaryGar" style="background-color:#669999;display:none"></div>
-			<div id="aquariumGar" style="background-color:#6666FF;display:none"></div>
-			<div id="barnGar" style="background-color:#FF6666;display:none"></div>
-		<div id="stuff" style="background-color:#99AAAA;border-style:dotted"></div>
+	
+	
+		<div id='garden' style='width:50%;float:left'> <!--all the things you buy will be displayed here-->
+		<div id='flowers' style='background-color:#dab080'></div>
+		<div id='animals' style='background-color:#dada80;border-style:double'></div>
+			<div id='aviaryGar' style='background-color:#669999;display:none'></div>
+			<div id='aquariumGar' style='background-color:#6666FF;display:none'></div>
+			<div id='barnGar' style='background-color:#FF6666;display:none'></div>
+		<div id='stuff' style='background-color:#99AAAA;border-style:dotted'></div>
 		</div>
 	 
 	 <!--ACHIEVEMENTS                          -->
-		<div id="achievements" style="width:50%;background-color:gold;align:left;float:left"> 
+		<div id='achievements' style='width:50%;background-color:gold;align:left;float:left'> 
 		<h3><u>Achievements!</u></h3>
-			<div id="10smooch" style="display:none">Ten smoochies!</div>
-			<div id="100smooch" style="display:none">A hundred smoochies! Yay!</div>
-			<div id="1000smooch" style="display:none">A thousand smoochies! Woooo!</div>
-			<div id="100happy" style="display:none">You got 100 happy points!</div>
-			<div id="1000happy" style="display:none">A thousand happy points! Go you!</div>
-			<div id="10000happy" style="display:none">Holy shit, ten thousand happy points!</div>
-			<div id="10flower" style="display:none">Ten flowers</div>
-			<div id="100flower" style="display:none">A hundred flowers</div>
-			<div id="10cactus" style="display:none">Ten cacti. Pointy!</div>
-			<div id="100cactus" style="display:none">One hundred cacti. Ouchie!</div>
+			<div id='10smooch' style='display:none'>Ten smoochies!</div>
+			<div id='100smooch' style='display:none'>A hundred smoochies! Yay!</div>
+			<div id='1000smooch' style='display:none'>A thousand smoochies! Woooo!</div>
+			<div id='100happy' style='display:none'>You got 100 happy points!</div>
+			<div id='1000happy' style='display:none'>A thousand happy points! Go you!</div>
+			<div id='10000happy' style='display:none'>Holy shit, ten thousand happy points!</div>
+			<div id='10flower' style='display:none'>Ten flowers</div>
+			<div id='100flower' style='display:none'>A hundred flowers</div>
+			<div id='10cactus' style='display:none'>Ten cacti. Pointy!</div>
+			<div id='100cactus' style='display:none'>One hundred cacti. Ouchie!</div>
+			<div id='birthday' style='display:none'>Happy birthday!</div>
 		</div>
-	 
+	
 	 <!--SCRIPT SECTION                              -->
 	 
         <script> 
@@ -284,382 +287,377 @@
 			let smoochpower = 1;
 			let happy = 0;
 				//objects 
-						const daisy= {
+	
+			const daisy= {
 				count: 0,
 				cost: 10,
 				costinc: 1.2,
 				power: 1.2
 			};
-			const tulip= {
+						const tulip= {
 				count: 0,
 				cost: 15,
 				costinc: 1.1,
 				power: 1.65
 			};
-			const rose= {
+						const rose= {
 				count: 0,
 				cost: 25,
 				costinc: 1.3,
 				power: 3.25
 			};
-			const sunflower= {
+						const sunflower= {
 				count: 0,
 				cost: 50,
 				costinc: 1.2,
 				power: 6
 			};
-			const cactus= {
+						const cactus= {
 				count: 0,
 				cost: 120,
 				costinc: 1.4,
 				power: 16.8
 			};
-			const parrot= {
+						const parrot= {
 				count: 0,
 				cost: 1000,
 				costinc: 1.5,
 				power: 200
 			};
-			const duck= {
+						const duck= {
 				count: 0,
 				cost: 1200,
 				costinc: 1.4,
 				power: 200
 			};
-			const cat= {
+						const cat= {
 				count: 0,
 				cost: 3000,
 				costinc: 1.2,
 				power: 300
 			};
-			const dog= {
+						const dog= {
 				count: 0,
 				cost: 4000,
 				costinc: 1.3,
 				power: 450
 			};
-			const bear= {
+						const bear= {
 				count: 0,
 				cost: 10000,
 				costinc: 1.05,
 				power: 2000
 			};
-			const turtle= {
+						const turtle= {
 				count: 0,
 				cost: 1000,
 				costinc: 1.5,
 				power: 100
 			};
-			const bunny= {
+						const bunny= {
 				count: 0,
 				cost: 500,
 				costinc: 1.1,
 				power: 40
 			};
-			const starfish= {
+						const starfish= {
 				count: 0,
 				cost: 160,
 				costinc: 1.5,
 				power: 24
 			};
-			const wateringcan= {
+						const wateringcan= {
 				count: 0,
 				cost: 2000,
 				costinc: 1.2,
 				power: 1.5
 			};
-			const birdfeeder= {
+						const birdfeeder= {
 				count: 0,
 				cost: 2500,
 				costinc: 1.2,
 				power: 1.1
 			};
-			const lipstick= {
+						const lipstick= {
 				count: 0,
 				cost: 500,
 				costinc: 2,
 				power: 2
 			};
-			const monkey= {
+						const monkey= {
 				count: 0,
 				cost: 30000,
 				costinc: 2,
 				power: 6000
 			};
-			const tiger= {
+						const tiger= {
 				count: 0,
 				cost: 50000,
 				costinc: 1.5,
 				power: 20000
 			};
-			const jackass= {
+						const jackass= {
 				count: 0,
 				cost: 10000,
 				costinc: 1.3,
 				power: 1000
 			};
-			const horse= {
+						const horse= {
 				count: 0,
 				cost: 25000,
 				costinc: 1.3,
 				power: 3250
 			};
-			const zebra= {
+						const zebra= {
 				count: 0,
 				cost: 50000,
 				costinc: 1.75,
 				power: 8750
 			};
-			const deer= {
+						const deer= {
 				count: 0,
 				cost: 35000,
 				costinc: 1.3,
 				power: 3000
 			};
-			const cow= {
+						const cow= {
 				count: 0,
 				cost: 5000,
 				costinc: 1.2,
 				power: 600
 			};
-			const pig= {
+						const pig= {
 				count: 0,
 				cost: 3000,
 				costinc: 1.2,
 				power: 360
 			};
-			const sheep= {
+						const sheep= {
 				count: 0,
 				cost: 2500,
 				costinc: 1.2,
 				power: 300
 			};
-			const camel= {
+						const camel= {
 				count: 0,
 				cost: 2500,
 				costinc: 1.4,
 				power: 300
 			};
-			const giraffe= {
+						const giraffe= {
 				count: 0,
 				cost: 90000,
 				costinc: 2,
 				power: 18000
 			};
-			const elephant= {
+						const elephant= {
 				count: 0,
 				cost: 100000,
 				costinc: 2,
 				power: 20000
 			};
-			const hedgehog= {
+						const hedgehog= {
 				count: 0,
 				cost: 75000,
 				costinc: 2,
 				power: 15000
 			};
-			const bat= {
+						const bat= {
 				count: 0,
 				cost: 500,
 				costinc: 1.3,
 				power: 50
 			};
-			const sloth= {
+						const sloth= {
 				count: 0,
 				cost: 50000,
 				costinc: 2,
 				power: 20000
 			};
-			const otter= {
+						const otter= {
 				count: 0,
 				cost: 9000,
 				costinc: 1.3,
 				power: 1000
 			};
-			const kangaroo= {
+						const kangaroo= {
 				count: 0,
 				cost: 120000,
 				costinc: 2,
 				power: 24000
 			};
-			const hatchling= {
+						const hatchling= {
 				count: 0,
 				cost: 100,
 				costinc: 2,
 				power: 2
 			};
-			const baby= {
+						const baby= {
 				count: 0,
 				cost: 1000,
 				costinc: 2,
 				power: 20
 			};
-			const songbird= {
+						const songbird= {
 				count: 0,
 				cost: 500,
 				costinc: 1.2,
 				power: 60
 			};
-			const penguin= {
+						const penguin= {
 				count: 0,
 				cost: 85000,
 				costinc: 2,
 				power: 20000
 			};
-			const dove= {
+						const dove= {
 				count: 0,
 				cost: 777,
 				costinc: 1.2,
 				power: 100
 			};
-			const swan= {
+						const swan= {
 				count: 0,
 				cost: 900,
 				costinc: 1.3,
 				power: 117
 			};
-			const owl= {
+						const owl= {
 				count: 0,
 				cost: 4007,
 				costinc: 1.5,
 				power: 600
 			};
-			const dodo= {
+						const dodo= {
 				count: 0,
 				cost: 250000,
 				costinc: 3,
 				power: 75000
 			};
-			const flamingo= {
+						const flamingo= {
 				count: 0,
 				cost: 99999,
 				costinc: 1.3,
 				power: 13000
 			};
-			const peacock= {
+						const peacock= {
 				count: 0,
 				cost: 44000,
 				costinc: 1.5,
 				power: 6600
 			};
-			const blackbird= {
+						const blackbird= {
 				count: 0,
 				cost: 3000,
 				costinc: 1.3,
 				power: 400
 			};
-			const chicken= {
+						const chicken= {
 				count: 0,
 				cost: 420,
 				costinc: 1.1,
 				power: 50
 			};
-			const goose= {
+						const goose= {
 				count: 0,
 				cost: 666,
 				costinc: 1.2,
 				power: 75
 			};
-			const phoenix= {
+						const phoenix= {
 				count: 0,
 				cost: 777777,
 				costinc: 3,
 				power: 250000
 			};
-			const lizard= {
+						const lizard= {
 				count: 0,
 				cost: 1000,
 				costinc: 1.2,
 				power: 100
 			};
-			const dragon= {
+						const dragon= {
 				count: 0,
 				cost: 999999,
 				costinc: 3,
 				power: 333333
 			};
-			const whale= {
+						const whale= {
 				count: 0,
 				cost: 77777,
 				costinc: 1.5,
 				power: 11000
 			};
-			const dolphin= {
+						const dolphin= {
 				count: 0,
 				cost: 95000,
 				costinc: 1.5,
 				power: 14250
 			};
-			const seal= {
+						const seal= {
 				count: 0,
 				cost: 20000,
 				costinc: 1.3,
 				power: 2600
 			};
-			const basic= {
+						const betta= {
 				count: 0,
 				cost: 100,
 				costinc: 1.1,
 				power: 11
 			};
-			const tropical= {
+						const tropical= {
 				count: 0,
 				cost: 300,
 				costinc: 1.3,
 				power: 39
 			};
-			const puffer= {
+						const pufferfish= {
 				count: 0,
 				cost: 1000,
 				costinc: 1.5,
 				power: 150
 			};
-			const shark= {
+						const shark= {
 				count: 0,
 				cost: 10000,
 				costinc: 2,
 				power: 2000
 			};
-			const octopus= {
+						const octopus= {
 				count: 0,
 				cost: 88888,
 				costinc: 2,
 				power: 17777.6
 			};
-			const jellyfish= {
+						const jellyfish= {
 				count: 0,
 				cost: 1,
 				costinc: 2,
 				power: 2
 			};
-			const bee= {
+						const bee= {
 				count: 0,
 				cost: 1,
 				costinc: 1.1,
 				power: 0.11
 			};
-			const shrimp= {
+						const shrimp= {
 				count: 0,
 				cost: 10,
 				costinc: 1.1,
 				power: 2
 			};
-			const squid= {
-				count: 0,
-				cost: 42000,
-				costinc: 1.4,
-				power: 5880
-			};
+			
 
-
-			let mess = "Messages for you will go here :) Click the Smooch! button to get started ";
-			let smoochgardenvar = ""; //for smooch emojis
-			let flowersvar = ""; //variable for the flower garden emojis
-			let stuffvar = "";
-			let animalsvar = "";
-			let aquariumvar= "";
-			let barnvar= "";
-			let aviaryvar= "";
+			let mess = 'Messages for you will go here :) Click the Smooch! button to get started ';
+			let smoochgardenvar = ''; //for smooch emojis
+			let flowersvar = ''; //variable for the flower garden emojis
+			let stuffvar = '';
+			let animalsvar = '';
+			let aquariumvar= '';
+			let barnvar= '';
+			let aviaryvar= '';
 			//interval variables
 			let loveinterval = 180;
 			let praiseinterval = 305;
@@ -667,271 +665,315 @@
 			let praiseticker = 0;
 			let bearhunger = 0;
 			let tigerhunger = 0;
+			let today = new Date();
 
 			let blackcatcount = 0;
 
 			setInterval(function() { 		// EVERY SECOND LOOP
-				happy = Math.round(happy + daisy.count*daisy.power+tulip.count*tulip.power+rose.count*rose.power+sunflower.count*sunflower.power+cactus.count*cactus.power+duck.power*duck.count+parrot.count*parrot.power+starfish.count*starfish.power+dog.count*dog.power+cat.count*cat.power+bear.count*bear.power+bunny.count*bunny.power+turtle.count*turtle.power+monkey.count*monkey.count+tiger.count*tiger.count+jackass.count*jackass.count+horse.count*horse.count+zebra.count*zebra.count+deer.count*deer.count+cow.count*cow.count+pig.count*pig.count+sheep.count*sheep.count+camel.count*camel.count+giraffe.count*giraffe.count+elephant.count*elephant.count+hedgehog.count*hedgehog.count+bat.count*bat.count+sloth.count*sloth.count+otter.count*otter.count+kangaroo.count*kangaroo.count+hatchling.count*hatchling.count+baby.count*baby.count+songbird.count*songbird.count+penguin.count*penguin.count+dove.count*dove.count+swan.count*swan.count+owl.count*owl.count+dodo.count*dodo.count+flamingo.count*flamingo.count+peacock.count*peacock.count+blackbird.count*blackbird.count+chicken.count*chicken.count+goose.count*goose.count+phoenix.count*phoenix.count+lizard.count*lizard.count+dragon.count*dragon.count+whale.count*whale.count+dolphin.count*dolphin.count+seal.count*seal.count+basic.count*basic.count+tropical.count*tropical.count+puffer.count*puffer.count+shark.count*shark.count+octopus.count*octopus.count+jellyfish.count*jellyfish.count+bee.count*bee.count+shrimp.count*shrimp.count+squid.count*squid.count
+				happy = Math.round(happy + +daisy.count*daisy.power+tulip.count*tulip.power+rose.count*rose.power+sunflower.count*sunflower.power+cactus.count*cactus.power+parrot.count*parrot.power+duck.count*duck.power+cat.count*cat.power+dog.count*dog.power+bear.count*bear.power+turtle.count*turtle.power+bunny.count*bunny.power+starfish.count*starfish.power+wateringcan.count*wateringcan.power*0+birdfeeder.count*birdfeeder.power*0+lipstick.count*lipstick.power*0+monkey.count*monkey.power+tiger.count*tiger.power+jackass.count*jackass.power+horse.count*horse.power+zebra.count*zebra.power+deer.count*deer.power+cow.count*cow.power+pig.count*pig.power+sheep.count*sheep.power+camel.count*camel.power+giraffe.count*giraffe.power+elephant.count*elephant.power+hedgehog.count*hedgehog.power+bat.count*bat.power+sloth.count*sloth.power+otter.count*otter.power+kangaroo.count*kangaroo.power+hatchling.count*hatchling.power+baby.count*baby.power+songbird.count*songbird.power+penguin.count*penguin.power+dove.count*dove.power+swan.count*swan.power+owl.count*owl.power+dodo.count*dodo.power+flamingo.count*flamingo.power+peacock.count*peacock.power+blackbird.count*blackbird.power+chicken.count*chicken.power+goose.count*goose.power+phoenix.count*phoenix.power+lizard.count*lizard.power+dragon.count*dragon.power+whale.count*whale.power+dolphin.count*dolphin.power+seal.count*seal.power+betta.count*betta.power+tropical.count*tropical.power+pufferfish.count*pufferfish.power+shark.count*shark.power+octopus.count*octopus.power+jellyfish.count*jellyfish.power+bee.count*bee.power+shrimp.count*shrimp.power
 );			//CORE HAPPY LOOP
+
 				//COUNTER UPDATES
-				document.getElementById("smoochcounter").innerHTML = "Smooches: " +  smooch; 
-				document.getElementById("happypointscounter").innerHTML = "Happy Points: " +  Math.round(happy); 
-				document.getElementById("hpstorecounter").innerHTML = "Happy Points: " +  Math.round(happy); 
+				document.getElementById('smoochcounter').innerHTML = 'Smooches: ' +  smooch; 
+				document.getElementById('happypointscounter').innerHTML = 'Happy Points: ' +  Math.round(happy); 
+				document.getElementById('hpstorecounter').innerHTML = 'Happy Points: ' +  Math.round(happy); 
 				//GARDEN UPDATES
-				document.getElementById("smoochgarden").innerHTML = smoochgardenvar;
-				document.getElementById("flowers").innerHTML = flowersvar;
-				document.getElementById("messages").innerHTML = mess;
-				document.getElementById("animals").innerHTML = animalsvar;
-				document.getElementById("stuff").innerHTML = stuffvar;
+				document.getElementById('smoochgarden').innerHTML = smoochgardenvar;
+				document.getElementById('flowers').innerHTML = flowersvar;
+				document.getElementById('messages').innerHTML = mess;
+				document.getElementById('animals').innerHTML = animalsvar;
+				document.getElementById('stuff').innerHTML = stuffvar;
 				
 				//unlocks							ADD FOR EACH ITEM
 					//store unlocks
 				if(smooch>50) {
-					document.getElementById("stuffstore").style.display = "inline-block";
+					document.getElementById('stuffstore').style.display = 'inline-block';
 				};
 				if(happy>500) {
-					document.getElementById("animalstore").style.display = "inline-block";
+					document.getElementById('animalsstore').style.display = 'inline-block';
 				};				
 
-					//item unlocks 
-				if(daisy.count+tulip.count+rose.count+sunflower.count>=3) {					//if the sum of the flowers is at least 3
-					document.getElementById("cactusBuy").style.display = "inline";			//unlock cactus
+				if(happy>=0) {
+					document.getElementById('daisyBuy').style.display = 'inline';
+					document.getElementById('flowersstore').appendChild(document.getElementById('daisyBuy'));
 				};
-				if(happy>10) {
-					document.getElementById("tulipBuy").style.display = "inline";
+								if(happy>10) {
+					document.getElementById('tulipBuy').style.display = 'inline';
+					document.getElementById('flowersstore').appendChild(document.getElementById('tulipBuy'));
 				};
-				if(happy>25) {
-					document.getElementById("roseBuy").style.display = "inline";
+								if(happy>20) {
+					document.getElementById('roseBuy').style.display = 'inline';
+					document.getElementById('flowersstore').appendChild(document.getElementById('roseBuy'));
 				};
-				if(happy>50) {
-					document.getElementById("sunflowerBuy").style.display = "inline";
+								if(happy>30) {
+					document.getElementById('sunflowerBuy').style.display = 'inline';
+					document.getElementById('flowersstore').appendChild(document.getElementById('sunflowerBuy'));
 				};
-				if(smooch>50) {
-					document.getElementById("lipstickBuy").style.display = "inline";
+								if(daisy.count+tulip.count+rose.count+sunflower.count>=5) {
+					document.getElementById('cactusBuy').style.display = 'inline';
+					document.getElementById('flowersstore').appendChild(document.getElementById('cactusBuy'));
 				};
-				if(happy>500) {
-					document.getElementById("parrotBuy").style.display = "inline";
-				};				
-				if(happy>1000) {
-					document.getElementById("starfishBuy").style.display = "inline";
-				};	
-				if(happy>1000) {
-					document.getElementById("duckBuy").style.display = "inline";
-				};				
-				if(smooch>200) {
-					document.getElementById("dogBuy").style.display = "inline";
-				};				
-				if(parrot.count+duck.count>3) {
-					document.getElementById("catBuy").style.display = "inline";
-				};				
-				if(happy>4000) {
-					document.getElementById("bunnyBuy").style.display = "inline";
-				};				
-				if(cactus.count>5) {
-					document.getElementById("turtleBuy").style.display = "inline";
-				};				
-				if(dog.count+cat.count+parrot.count+duck.count+bunny.count+turtle.count>20) {
-					document.getElementById("bearBuy").style.display = "inline";
-				};				
-				if(daisy.count+tulip.count+rose.count+sunflower.count>=30) {					//if the sum of the flowers is at least 30
-					document.getElementById("wateringcanBuy").style.display = "inline";
-				};				
-				if(parrot.count+duck.count>10) {
-					document.getElementById("birdfeederBuy").style.display = "inline";
-				};				
-				if(happy>10000) {
+								if(happy>500) {
+					document.getElementById('parrotBuy').style.display = 'inline';
+					document.getElementById('animalsstore').appendChild(document.getElementById('parrotBuy'));
+				};
+								if(happy>500) {
+					document.getElementById('duckBuy').style.display = 'inline';
+					document.getElementById('animalsstore').appendChild(document.getElementById('duckBuy'));
+				};
+								if(parrot.count+duck.count+betta.count>4) {
+					document.getElementById('catBuy').style.display = 'inline';
+					document.getElementById('animalsstore').appendChild(document.getElementById('catBuy'));
+				};
+								if(smooch>100) {
+					document.getElementById('dogBuy').style.display = 'inline';
+					document.getElementById('animalsstore').appendChild(document.getElementById('dogBuy'));
+				};
+								if(dog.count+cat.count+parrot.count+duck.count+bunny.count+turtle.count>20) {
+					document.getElementById('bearBuy').style.display = 'inline';
+					document.getElementById('animalsstore').appendChild(document.getElementById('bearBuy'));
+				};
+								if(cactus.count>4) {
+					document.getElementById('turtleBuy').style.display = 'inline';
+					document.getElementById('animalsstore').appendChild(document.getElementById('turtleBuy'));
+				};
+								if(animalsvar.length>14) {
+					document.getElementById('bunnyBuy').style.display = 'inline';
+					document.getElementById('animalsstore').appendChild(document.getElementById('bunnyBuy'));
+				};
+								if(happy*smooch>10000) {
+					document.getElementById('starfishBuy').style.display = 'inline';
+					document.getElementById('animalsstore').appendChild(document.getElementById('starfishBuy'));
+				};
+								if(daisy.count+tulip.count+rose.count+sunflower.count>=30) {
+					document.getElementById('wateringcanBuy').style.display = 'inline';
+					document.getElementById('stuffstore').appendChild(document.getElementById('wateringcanBuy'));
+				};
+								if(wateringcan.count>=1) {
+					document.getElementById('birdfeederBuy').style.display = 'inline';
+					document.getElementById('stuffstore').appendChild(document.getElementById('birdfeederBuy'));
+				};
+								if(smooch>100) {
+					document.getElementById('lipstickBuy').style.display = 'inline';
+					document.getElementById('stuffstore').appendChild(document.getElementById('lipstickBuy'));
+				};
+								if(happy>18000) {
 					document.getElementById('monkeyBuy').style.display = 'inline';
-				};				
-				if(cat.count>10) {
+					document.getElementById('animalsstore').appendChild(document.getElementById('monkeyBuy'));
+				};
+								if(cat.count>10) {
 					document.getElementById('tigerBuy').style.display = 'inline';
-				};				
-				if(dog.count>5) {
+					document.getElementById('animalsstore').appendChild(document.getElementById('tigerBuy'));
+				};
+								if(daisy.count+tulip.count+rose.count+sunflower.count>=50) {
 					document.getElementById('jackassBuy').style.display = 'inline';
-				};				
-				if(daisy.count+3*sunflower.count>50) {
+					document.getElementById('animalsstore').appendChild(document.getElementById('jackassBuy'));
+				};
+								if(daisy.count+3*sunflower.count>50) {
 					document.getElementById('horseBuy').style.display = 'inline';
-				};				
-				if(horse.count>1) {
-					if(blackcatcount>1) {
+					document.getElementById('animalsstore').appendChild(document.getElementById('horseBuy'));
+				};
+								if(horse.count>=1 && blackcatcount>=1) {
 					document.getElementById('zebraBuy').style.display = 'inline';
-					};				
-				};				
-				if(happy>1000) {
-					if(sunflower.count>2) {
+					document.getElementById('animalsstore').appendChild(document.getElementById('zebraBuy'));
+				};
+								if(happy>5000 && sunflower.count>49) {
 					document.getElementById('deerBuy').style.display = 'inline';
-					};				
-				};				
-				if(happy>10000) {
+					document.getElementById('animalsstore').appendChild(document.getElementById('deerBuy'));
+				};
+								if(happy>5000) {
 					document.getElementById('cowBuy').style.display = 'inline';
-				};				
-				if(cow.count>=1) {
+					document.getElementById('animalsstore').appendChild(document.getElementById('cowBuy'));
+				};
+								if(cow.count>=1) {
 					document.getElementById('pigBuy').style.display = 'inline';
-				};				
-				if(pig.count>=1) {
+					document.getElementById('animalsstore').appendChild(document.getElementById('pigBuy'));
+				};
+								if(pig.count>=1) {
 					document.getElementById('sheepBuy').style.display = 'inline';
-				};				
-				if(horse.count*jackass.count>=25) {
+					document.getElementById('animalsstore').appendChild(document.getElementById('sheepBuy'));
+				};
+								if(horse.count*jackass.count>=25) {
 					document.getElementById('camelBuy').style.display = 'inline';
-				};				
-				if(happy>500000) {
+					document.getElementById('animalsstore').appendChild(document.getElementById('camelBuy'));
+				};
+								if(happy>200000) {
 					document.getElementById('giraffeBuy').style.display = 'inline';
-				};				
-				if(smooch>1000) {
+					document.getElementById('animalsstore').appendChild(document.getElementById('giraffeBuy'));
+				};
+								if(camel.count+horse.count+jackass.count>=20) {
 					document.getElementById('elephantBuy').style.display = 'inline';
-				};				
-				if(bunny.count*parrot.count>=36) {
+					document.getElementById('animalsstore').appendChild(document.getElementById('elephantBuy'));
+				};
+								if(bunny.count*parrot.count>=36) {
 					document.getElementById('hedgehogBuy').style.display = 'inline';
-				};				
-				if(parrot.count>=10) {
+					document.getElementById('animalsstore').appendChild(document.getElementById('hedgehogBuy'));
+				};
+								if(parrot.count>10) {
 					document.getElementById('batBuy').style.display = 'inline';
-				};				
-				if(happy>=1000000) {
+					document.getElementById('animalsstore').appendChild(document.getElementById('batBuy'));
+				};
+								if(happy>1000000) {
 					document.getElementById('slothBuy').style.display = 'inline';
-				};				
-				if(happy>10000) {
+					document.getElementById('animalsstore').appendChild(document.getElementById('slothBuy'));
+				};
+								if(happy>=7500) {
 					document.getElementById('otterBuy').style.display = 'inline';
-				};				
-				if(happy>500000) {
+					document.getElementById('animalsstore').appendChild(document.getElementById('otterBuy'));
+				};
+								if(happy>=150000) {
 					document.getElementById('kangarooBuy').style.display = 'inline';
-				};				
-				if(happy>1000000) {
+					document.getElementById('animalsstore').appendChild(document.getElementById('kangarooBuy'));
+				};
+								if(happy>=100000) {
 					document.getElementById('hatchlingBuy').style.display = 'inline';
-				};				
-				if(happy>1000000) {
+					document.getElementById('animalsstore').appendChild(document.getElementById('hatchlingBuy'));
+				};
+								if(happy>=100000) {
 					document.getElementById('babyBuy').style.display = 'inline';
-				};				
-				if(happy>1000000) {
+					document.getElementById('animalsstore').appendChild(document.getElementById('babyBuy'));
+				};
+								if(happy>=100000) {
 					document.getElementById('songbirdBuy').style.display = 'inline';
-				};				
-				if(happy>1000000) {
+					document.getElementById('animalsstore').appendChild(document.getElementById('songbirdBuy'));
+				};
+								if(happy>=100000) {
 					document.getElementById('penguinBuy').style.display = 'inline';
-				};				
-				if(happy>1000000) {
+					document.getElementById('animalsstore').appendChild(document.getElementById('penguinBuy'));
+				};
+								if(happy>=100000) {
 					document.getElementById('doveBuy').style.display = 'inline';
-				};				
-				if(happy>1000000) {
+					document.getElementById('animalsstore').appendChild(document.getElementById('doveBuy'));
+				};
+								if(happy>=100000) {
 					document.getElementById('swanBuy').style.display = 'inline';
-				};				
-				if(happy>1000000) {
+					document.getElementById('animalsstore').appendChild(document.getElementById('swanBuy'));
+				};
+								if(happy>=100000) {
 					document.getElementById('owlBuy').style.display = 'inline';
-				};				
-				if(happy>1000000) {
+					document.getElementById('animalsstore').appendChild(document.getElementById('owlBuy'));
+				};
+								if(happy>=100000) {
 					document.getElementById('dodoBuy').style.display = 'inline';
-				};				
-				if(happy>10000) {
+					document.getElementById('animalsstore').appendChild(document.getElementById('dodoBuy'));
+				};
+								if(happy>=100000) {
 					document.getElementById('flamingoBuy').style.display = 'inline';
-				};				
-				if(happy>10000) {
+					document.getElementById('animalsstore').appendChild(document.getElementById('flamingoBuy'));
+				};
+								if(happy>=100000) {
 					document.getElementById('peacockBuy').style.display = 'inline';
-				};				
-				if(happy>10000) {
+					document.getElementById('animalsstore').appendChild(document.getElementById('peacockBuy'));
+				};
+								if(happy>=100000) {
 					document.getElementById('blackbirdBuy').style.display = 'inline';
-				};				
-				if(happy>10000) {
+					document.getElementById('animalsstore').appendChild(document.getElementById('blackbirdBuy'));
+				};
+								if(happy>=100000) {
 					document.getElementById('chickenBuy').style.display = 'inline';
-				};				
-				if(happy>10000) {
+					document.getElementById('animalsstore').appendChild(document.getElementById('chickenBuy'));
+				};
+								if(happy>=100000) {
 					document.getElementById('gooseBuy').style.display = 'inline';
-				};				
-				if(happy>10000) {
+					document.getElementById('animalsstore').appendChild(document.getElementById('gooseBuy'));
+				};
+								if(happy>=100000) {
 					document.getElementById('phoenixBuy').style.display = 'inline';
-				};				
-				if(basic.count>=1) {
+					document.getElementById('animalsstore').appendChild(document.getElementById('phoenixBuy'));
+				};
+								if(turtle.count>=2) {
 					document.getElementById('lizardBuy').style.display = 'inline';
-				};				
-				if(tropical.count>=10) {
-					if(lizard.count>=10) {
-						if(parrot.count>=10) {
-							document.getElementById('dragonBuy').style.display = 'inline';
-						};				
-					};				
-				};				
-				if(basic.count>100) {
+					document.getElementById('animalsstore').appendChild(document.getElementById('lizardBuy'));
+				};
+								if(tropical.count>=10 && parrot.count>=10 && lizard.count>=10) {
+					document.getElementById('dragonBuy').style.display = 'inline';
+					document.getElementById('animalsstore').appendChild(document.getElementById('dragonBuy'));
+				};
+								if(betta.count>100) {
 					document.getElementById('whaleBuy').style.display = 'inline';
-				};				
-				if(tropical.count>5) {
+					document.getElementById('animalsstore').appendChild(document.getElementById('whaleBuy'));
+				};
+								if(tropical.count>10) {
 					document.getElementById('dolphinBuy').style.display = 'inline';
-				};				
-				if(happy>100000) {
-					if(basic.count>10) {
+					document.getElementById('animalsstore').appendChild(document.getElementById('dolphinBuy'));
+				};
+								if(happy>=20000 && betta.count>=20) {
 					document.getElementById('sealBuy').style.display = 'inline';
-					};				
-				};				
-				if(happy>1000) {
-					document.getElementById('basicBuy').style.display = 'inline';
-				};				
-				if(happy>10000) {
+					document.getElementById('animalsstore').appendChild(document.getElementById('sealBuy'));
+				};
+								if(happy>=100) {
+					document.getElementById('bettaBuy').style.display = 'inline';
+					document.getElementById('animalsstore').appendChild(document.getElementById('bettaBuy'));
+				};
+								if(betta.count>5) {
 					document.getElementById('tropicalBuy').style.display = 'inline';
-				};				
-				if(happy>100000) {
-					if(tropical.count>2) {
-						document.getElementById('pufferBuy').style.display = 'inline';
-					};				
-				};				
-				if(happy>10000) {
-					if(whale.count>1) {
-						document.getElementById('sharkBuy').style.display = 'inline';
-					};				
-				};				
-				if(happy>10000) {
-					if(shark.count>1) {
+					document.getElementById('animalsstore').appendChild(document.getElementById('tropicalBuy'));
+				};
+								if(tropical.count>5 && happy>1000) {
+					document.getElementById('pufferfishBuy').style.display = 'inline';
+					document.getElementById('animalsstore').appendChild(document.getElementById('pufferfishBuy'));
+				};
+								if(tiger.count>=1) {
+					document.getElementById('sharkBuy').style.display = 'inline';
+					document.getElementById('animalsstore').appendChild(document.getElementById('sharkBuy'));
+				};
+								if(shark.count>=1) {
 					document.getElementById('octopusBuy').style.display = 'inline';
-					};				
-				};				
-				if(happy>1000) {
+					document.getElementById('animalsstore').appendChild(document.getElementById('octopusBuy'));
+				};
+								if(happy>=10000) {
 					document.getElementById('jellyfishBuy').style.display = 'inline';
-				};				
-				if(happy>1000) {
+					document.getElementById('animalsstore').appendChild(document.getElementById('jellyfishBuy'));
+				};
+								if(daisy.count+tulip.count+rose.count+sunflower.count>=100) {
 					document.getElementById('beeBuy').style.display = 'inline';
-				};				
-				if(happy>5000) {
+					document.getElementById('animalsstore').appendChild(document.getElementById('beeBuy'));
+				};
+								if(smooch>200) {
 					document.getElementById('shrimpBuy').style.display = 'inline';
-				};				
-				if(happy>10000) {
-					document.getElementById('squidBuy').style.display = 'inline';
-				};				
-
-
-
+					document.getElementById('animalsstore').appendChild(document.getElementById('shrimpBuy'));
+				};
+				
+				
 				//achievement unlocks 
 				if(smooch>=10) {
-					document.getElementById("10smooch").style.display = "inline";
+					document.getElementById('10smooch').style.display = 'inline';
 					};
 				if(smooch>=100) {
-					document.getElementById("100smooch").style.display = "inline";
+					document.getElementById('100smooch').style.display = 'inline';
 					};
 				if(smooch>=1000) {
-					document.getElementById("100smooch").style.display = "inline";
+					document.getElementById('100smooch').style.display = 'inline';
 					};
 				if(happy>=100) {
-					document.getElementById("100happy").style.display = "inline";
+					document.getElementById('100happy').style.display = 'inline';
 					};				
 				if(happy>=1000) {
-					document.getElementById("1000happy").style.display = "inline";
+					document.getElementById('1000happy').style.display = 'inline';
 					};				
 				if(happy>=10000) {
-					document.getElementById("10000happy").style.display = "inline";
+					document.getElementById('10000happy').style.display = 'inline';
 					};
 				if(daisy.count+tulip.count+rose.count+sunflower.count>=10) {
-					document.getElementById("10flower").style.display = "inline";
+					document.getElementById('10flower').style.display = 'inline';
 					};				
 				if(daisy.count+tulip.count+rose.count+sunflower.count>=100) {
-					document.getElementById("100flower").style.display = "inline";
+					document.getElementById('100flower').style.display = 'inline';
 					};				
 				if(cactus.count>=10) {
-					document.getElementById("10cactus").style.display = "inline";
+					document.getElementById('10cactus').style.display = 'inline';
 					};				
 				if(cactus.count>=100) {
-					document.getElementById("100cactus").style.display = "inline";
+					document.getElementById('100cactus').style.display = 'inline';
 					};
-				
+				if(today.getMonth()==8 && today.getDate()==9) {
+					document.getElementById('birthday').style.display = 'inline';
+					};
 
-
-			
 				//variable clocks
 				loveticker++;
 				if(loveticker>=loveinterval) {
-				mess = "I love you!";
+				mess = 'I love you!';
 				smooch = smooch + 1;
 				happy++;
 				loveticker=0;
@@ -939,7 +981,7 @@
 
 				praiseticker++;
 				if(praiseticker>=praiseinterval) {
-				mess = "You're a cutie!";
+				mess = 'You a cutie!';
 				happy = happy + 3;
 				praiseticker=0;
 				};
@@ -949,13 +991,13 @@
 				if(bearhunger>=Math.random()*60) {
 					if(dog.count>=1) {
 						dog.count = dog.count-1;
-						animalsvar = animalsvar.replace("🐕","");
+						animalsvar = animalsvar.replace('🐕','');
 						bearhunger = 0;
-						mess = "Oh no The bears got hungry and ate a dog!";
+						mess = 'Oh no The bears got hungry and ate a dog!';
 					} else {
 						if(cat.count-blackcatcount>=1) {
 							cat.count = cat.count-1;
-							animalsvar = animalsvar.replace("🐈","");
+							animalsvar = animalsvar.replace('🐈','');
 							bearhunger = bearhunger/2;
 						};
 					};
@@ -965,149 +1007,146 @@
 				if(tigerhunger>=Math.random()*30) {
 					if(dog.count>=1) {
 						dog.count = dog.count-1;
-						animalsvar = animalsvar.replace("🐕","");
+						animalsvar = animalsvar.replace('🐕','');
 						tigerhunger = tigerhunger/2;
-						mess = "Oh no The tigers got hungry and ate a dog!";
+						mess = 'Oh no The tigers got hungry and ate a dog!';
 					} else {
 						if(cat.count-blackcatcount>=1) {
 							cat.count = cat.count-1;
-							animalsvar = animalsvar.replace("🐈","");
+							animalsvar = animalsvar.replace('🐈','');
 							tigerhunger = 2*tigerhunger/3;
-							mess = "Oh no The tigers got hungry and ate a cat!";
+							mess = 'Oh no The tigers got hungry and ate a cat!';
 						};
 					};
 				};
 				
 				//TEXT DISPLAY UPDATES
 					//counters
-			document.getElementById("smoochcounter").innerHTML = "Smooches: " +  smooch; 
-			document.getElementById("daisiescounter").innerHTML = "Daisies: " +  daisy.count; 
-			document.getElementById("tulipscounter").innerHTML = "Tulips: " +  tulip.count; 
-			document.getElementById("rosescounter").innerHTML = "Roses: " +  rose.count; 
-			document.getElementById("sunflowerscounter").innerHTML = "Sunflowers: " +  sunflower.count; 
-			document.getElementById("cactuscounter").innerHTML = "Cacti: " +  cactus.count; 
-			document.getElementById("parrotcounter").innerHTML = "Parrots: " + parrot.count; 
-			document.getElementById("starfishcounter").innerHTML = "Starfish: " +  starfish.count; 
-			document.getElementById("duckcounter").innerHTML = "Ducks: " +  duck.count; 
-			document.getElementById("bunnycounter").innerHTML = "Bunnies: " +  bunny.count; 
-			document.getElementById("dogcounter").innerHTML = "Dogs: " +  dog.count; 
-			document.getElementById("catcounter").innerHTML = "Cats: " +  cat.count; 
-			document.getElementById("bearcounter").innerHTML = "Bears: " +  bear.count; 
-			document.getElementById("turtlecounter").innerHTML = "Turtles: " +  turtle.count; 
-			document.getElementById("birdfeedercounter").innerHTML = "Bird feeders: " + birdfeeder.count; 
-			document.getElementById("wateringcancounter").innerHTML = "Watering cans: " +  wateringcan.count; 
-			document.getElementById("happypointscounter").innerHTML = "Happy Points: " +  happy; 
-			document.getElementById("monkeycounter").innerHTML = 'Monkeys: ' + monkey.count;  
-			document.getElementById('tigercounter').innerHTML = 'Tigers: ' + tiger.count; 
-			document.getElementById('jackasscounter').innerHTML = 'Jackasss: ' + jackass.count; 
-			document.getElementById('horsecounter').innerHTML = 'Horses: ' + horse.count; 
-			document.getElementById('zebracounter').innerHTML = 'Zebras: ' + zebra.count; 
-			document.getElementById('deercounter').innerHTML = 'Deer: ' + deer.count; 
-			document.getElementById('cowcounter').innerHTML = 'Cows: ' + cow.count; 
-			document.getElementById('pigcounter').innerHTML = 'Pigs: ' + pig.count; 
-			document.getElementById('sheepcounter').innerHTML = 'Sheep: ' + sheep.count; 
-			document.getElementById('camelcounter').innerHTML = 'Camels: ' + camel.count; 
-			document.getElementById('giraffecounter').innerHTML = 'Giraffes: ' + giraffe.count; 
-			document.getElementById('elephantcounter').innerHTML = 'Elephants: ' + elephant.count; 
-			document.getElementById('hedgehogcounter').innerHTML = 'Hedgehogs: ' + hedgehog.count; 
-			document.getElementById('batcounter').innerHTML = 'Bats: ' + bat.count; 
-			document.getElementById('slothcounter').innerHTML = 'Sloths: ' + sloth.count; 
-			document.getElementById('ottercounter').innerHTML = 'Otters: ' + otter.count; 
-			document.getElementById('kangaroocounter').innerHTML = 'Kangaroos: ' + kangaroo.count; 
-			document.getElementById('hatchlingcounter').innerHTML = 'Hatchlings: ' + hatchling.count; 
-			document.getElementById('babycounter').innerHTML = 'Baby birds: ' + baby.count; 
-			document.getElementById('songbirdcounter').innerHTML = 'Songbirds: ' + songbird.count; 
-			document.getElementById('penguincounter').innerHTML = 'Penguins: ' + penguin.count; 
-			document.getElementById('dovecounter').innerHTML = 'Doves: ' + dove.count; 
-			document.getElementById('swancounter').innerHTML = 'Swans: ' + swan.count; 
-			document.getElementById('owlcounter').innerHTML = 'Owls: ' + owl.count; 
-			document.getElementById('dodocounter').innerHTML = 'Dodos: ' + dodo.count; 
-			document.getElementById('flamingocounter').innerHTML = 'Flamingos: ' + flamingo.count; 
-			document.getElementById('peacockcounter').innerHTML = 'Peacocks: ' + peacock.count; 
-			document.getElementById('blackbirdcounter').innerHTML = 'Blackbirds: ' + blackbird.count; 
-			document.getElementById('chickencounter').innerHTML = 'Chickens: ' + chicken.count; 
-			document.getElementById('goosecounter').innerHTML = 'Geese: ' + goose.count; 
-			document.getElementById('phoenixcounter').innerHTML = 'Phoenixes: ' + phoenix.count; 
-			document.getElementById('lizardcounter').innerHTML = 'Lizards: ' + lizard.count; 
-			document.getElementById('dragoncounter').innerHTML = 'Dragons: ' + dragon.count; 
-			document.getElementById('whalecounter').innerHTML = 'Whales: ' + whale.count; 
-			document.getElementById('dolphincounter').innerHTML = 'Dolphins: ' + dolphin.count; 
-			document.getElementById('sealcounter').innerHTML = 'Seals: ' + seal.count; 
-			document.getElementById('basiccounter').innerHTML = 'Betta fish: ' + basic.count; 
-			document.getElementById('tropicalcounter').innerHTML = 'Tropical fish: ' + tropical.count; 
-			document.getElementById('puffercounter').innerHTML = 'Pufferfish: ' + puffer.count; 
-			document.getElementById('sharkcounter').innerHTML = 'Sharks: ' + shark.count; 
-			document.getElementById('octopuscounter').innerHTML = 'Octopi: ' + octopus.count; 
-			document.getElementById('jellyfishcounter').innerHTML = 'Jellyfishies: ' + jellyfish.count; 
-			document.getElementById('beecounter').innerHTML = 'Bees: ' + bee.count + '!'; 
-			document.getElementById('shrimpcounter').innerHTML = 'Shrimps: ' + shrimp.count; 
-			document.getElementById('squidcounter').innerHTML = 'Squids: ' + squid.count; 
+			document.getElementById('smoochcounter').innerHTML = 'Smooches: ' +  smooch; 
+	
+document.getElementById('daisycounter').innerHTML = 'Daisies: ' + daisy.count;
+document.getElementById('tulipcounter').innerHTML = 'Tulips: ' + tulip.count;
+document.getElementById('rosecounter').innerHTML = 'Roses: ' + rose.count;
+document.getElementById('sunflowercounter').innerHTML = 'Sunflowers: ' + sunflower.count;
+document.getElementById('cactuscounter').innerHTML = 'Cacti: ' + cactus.count;
+document.getElementById('parrotcounter').innerHTML = 'Parrots: ' + parrot.count;
+document.getElementById('duckcounter').innerHTML = 'Ducks: ' + duck.count;
+document.getElementById('catcounter').innerHTML = 'Cats: ' + cat.count;
+document.getElementById('dogcounter').innerHTML = 'Dogs: ' + dog.count;
+document.getElementById('bearcounter').innerHTML = 'Bears: ' + bear.count;
+document.getElementById('turtlecounter').innerHTML = 'Turtles: ' + turtle.count;
+document.getElementById('bunnycounter').innerHTML = 'Bunnies: ' + bunny.count;
+document.getElementById('starfishcounter').innerHTML = 'Starfish: ' + starfish.count;
+document.getElementById('wateringcancounter').innerHTML = 'Wateringcans: ' + wateringcan.count;
+document.getElementById('birdfeedercounter').innerHTML = 'Birdfeeders: ' + birdfeeder.count;
+document.getElementById('lipstickcounter').innerHTML = 'Lipsticks: ' + lipstick.count;
+document.getElementById('monkeycounter').innerHTML = 'Monkeys: ' + monkey.count;
+document.getElementById('tigercounter').innerHTML = 'Tigers: ' + tiger.count;
+document.getElementById('jackasscounter').innerHTML = 'Jackasses: ' + jackass.count;
+document.getElementById('horsecounter').innerHTML = 'Horses: ' + horse.count;
+document.getElementById('zebracounter').innerHTML = 'Zebras: ' + zebra.count;
+document.getElementById('deercounter').innerHTML = 'Deers: ' + deer.count;
+document.getElementById('cowcounter').innerHTML = 'Cows: ' + cow.count;
+document.getElementById('pigcounter').innerHTML = 'Pigs: ' + pig.count;
+document.getElementById('sheepcounter').innerHTML = 'Sheep: ' + sheep.count;
+document.getElementById('camelcounter').innerHTML = 'Camels: ' + camel.count;
+document.getElementById('giraffecounter').innerHTML = 'Giraffes: ' + giraffe.count;
+document.getElementById('elephantcounter').innerHTML = 'Elephants: ' + elephant.count;
+document.getElementById('hedgehogcounter').innerHTML = 'Hedgehogs: ' + hedgehog.count;
+document.getElementById('batcounter').innerHTML = 'Bats: ' + bat.count;
+document.getElementById('slothcounter').innerHTML = 'Sloths: ' + sloth.count;
+document.getElementById('ottercounter').innerHTML = 'Otters: ' + otter.count;
+document.getElementById('kangaroocounter').innerHTML = 'Kangaroos: ' + kangaroo.count;
+document.getElementById('hatchlingcounter').innerHTML = 'Hatchlings: ' + hatchling.count;
+document.getElementById('babycounter').innerHTML = 'Chicks: ' + baby.count;
+document.getElementById('songbirdcounter').innerHTML = 'Songbirds: ' + songbird.count;
+document.getElementById('penguincounter').innerHTML = 'Penguins: ' + penguin.count;
+document.getElementById('dovecounter').innerHTML = 'Doves: ' + dove.count;
+document.getElementById('swancounter').innerHTML = 'Swans: ' + swan.count;
+document.getElementById('owlcounter').innerHTML = 'Owls: ' + owl.count;
+document.getElementById('dodocounter').innerHTML = 'Dodos: ' + dodo.count;
+document.getElementById('flamingocounter').innerHTML = 'Flamingos: ' + flamingo.count;
+document.getElementById('peacockcounter').innerHTML = 'Peacocks: ' + peacock.count;
+document.getElementById('blackbirdcounter').innerHTML = 'Blackbirds: ' + blackbird.count;
+document.getElementById('chickencounter').innerHTML = 'Chickens: ' + chicken.count;
+document.getElementById('goosecounter').innerHTML = 'Gooses: ' + goose.count;
+document.getElementById('phoenixcounter').innerHTML = 'Phoenixs: ' + phoenix.count;
+document.getElementById('lizardcounter').innerHTML = 'Lizards: ' + lizard.count;
+document.getElementById('dragoncounter').innerHTML = 'Dragons: ' + dragon.count;
+document.getElementById('whalecounter').innerHTML = 'Whales: ' + whale.count;
+document.getElementById('dolphincounter').innerHTML = 'Dolphins: ' + dolphin.count;
+document.getElementById('sealcounter').innerHTML = 'Seals: ' + seal.count;
+document.getElementById('bettacounter').innerHTML = 'Betta Fish: ' + betta.count;
+document.getElementById('tropicalcounter').innerHTML = 'Tropical Fish: ' + tropical.count;
+document.getElementById('pufferfishcounter').innerHTML = 'Pufferfish: ' + pufferfish.count;
+document.getElementById('sharkcounter').innerHTML = 'Sharks: ' + shark.count;
+document.getElementById('octopuscounter').innerHTML = 'Octopi: ' + octopus.count;
+document.getElementById('jellyfishcounter').innerHTML = 'Jellyfish: ' + jellyfish.count;
+document.getElementById('beecounter').innerHTML = 'Bees: ' + bee.count;
+document.getElementById('shrimpcounter').innerHTML = 'Shrimps: ' + shrimp.count;
 
-					//buy buttons
-			document.getElementById("daisyBuy").innerHTML = "Buy daisy for " +  daisy.cost + " happy points"; 
-			document.getElementById("tulipBuy").innerHTML = "Buy tulip for " +  tulip.cost + " happy points"; 
-			document.getElementById("roseBuy").innerHTML = "Buy rose for " +  rose.cost + " happy points"; 
-			document.getElementById("sunflowerBuy").innerHTML = "Buy sunflower for " +  sunflower.cost + " happy points"; 
-			document.getElementById("cactusBuy").innerHTML = "Buy cactus for " +  cactus.cost + " happy points"; 
-			document.getElementById("lipstickBuy").innerHTML = "Buy lipstick for " +  lipstick.cost + " happy points"; 
-			document.getElementById("duckBuy").innerHTML = "Buy duck for " +  duck.cost + " happy points"; 
-			document.getElementById("parrotBuy").innerHTML = "Buy parrot for " +  parrot.cost + " happy points"; 
-			document.getElementById("starfishBuy").innerHTML = "Buy starfish for " +  starfish.cost + " happy points"; 
-			document.getElementById("duckBuy").innerHTML = "Buy duck for " +  duck.cost + " happy points"; 
-			document.getElementById("bunnyBuy").innerHTML = "Buy bunny for " +  bunny.cost + " happy points"; 
-			document.getElementById("dogBuy").innerHTML = "Buy dog for " +  dog.cost + " happy points"; 
-			document.getElementById("catBuy").innerHTML = "Buy cat for " +  cat.cost + " happy points"; 
-			document.getElementById("bearBuy").innerHTML = "Buy bear for " +  bear.cost + " happy points"; 
-			document.getElementById("turtleBuy").innerHTML = "Buy turtle for " +  turtle.cost + " happy points"; 
-			document.getElementById("birdfeederBuy").innerHTML = "Buy bird feeder for " +  birdfeeder.cost + " happy points"; 
-			document.getElementById("wateringcanBuy").innerHTML = "Buy watering can for " +  wateringcan.cost + " happy points"; 
-			document.getElementById('monkeyBuy').innerHTML = 'Buy monkey for ' +  monkey.cost + ' happy points';
-			document.getElementById('tigerBuy').innerHTML = 'Buy tiger for ' +  tiger.cost + ' happy points';
-			document.getElementById('jackassBuy').innerHTML = 'Buy jackass for ' +  jackass.cost + ' happy points';
-			document.getElementById('horseBuy').innerHTML = 'Buy horse for ' +  horse.cost + ' happy points';
-			document.getElementById('zebraBuy').innerHTML = 'Buy zebra for ' +  zebra.cost + ' happy points';
-			document.getElementById('deerBuy').innerHTML = 'Buy deer for ' +  deer.cost + ' happy points';
-			document.getElementById('cowBuy').innerHTML = 'Buy cow for ' +  cow.cost + ' happy points';
-			document.getElementById('pigBuy').innerHTML = 'Buy pig for ' +  pig.cost + ' happy points';
-			document.getElementById('sheepBuy').innerHTML = 'Buy sheep for ' +  sheep.cost + ' happy points';
-			document.getElementById('camelBuy').innerHTML = 'Buy camel for ' +  camel.cost + ' happy points';
-			document.getElementById('giraffeBuy').innerHTML = 'Buy giraffe for ' +  giraffe.cost + ' happy points';
-			document.getElementById('elephantBuy').innerHTML = 'Buy elephant for ' +  elephant.cost + ' happy points';
-			document.getElementById('hedgehogBuy').innerHTML = 'Buy hedgehog for ' +  hedgehog.cost + ' happy points';
-			document.getElementById('batBuy').innerHTML = 'Buy bat for ' +  bat.cost + ' happy points';
-			document.getElementById('slothBuy').innerHTML = 'Buy sloth for ' +  sloth.cost + ' happy points';
-			document.getElementById('otterBuy').innerHTML = 'Buy otter for ' +  otter.cost + ' happy points';
-			document.getElementById('kangarooBuy').innerHTML = 'Buy kangaroo for ' +  kangaroo.cost + ' happy points';
-			document.getElementById('hatchlingBuy').innerHTML = 'Buy hatchling for ' +  hatchling.cost + ' happy points';
-			document.getElementById('babyBuy').innerHTML = 'Buy baby bird for ' +  baby.cost + ' happy points';
-			document.getElementById('songbirdBuy').innerHTML = 'Buy songbird for ' +  songbird.cost + ' happy points';
-			document.getElementById('penguinBuy').innerHTML = 'Buy penguin for ' +  penguin.cost + ' happy points';
-			document.getElementById('doveBuy').innerHTML = 'Buy dove for ' +  dove.cost + ' happy points';
-			document.getElementById('swanBuy').innerHTML = 'Buy swan for ' +  swan.cost + ' happy points';
-			document.getElementById('owlBuy').innerHTML = 'Buy owl for ' +  owl.cost + ' happy points';
-			document.getElementById('dodoBuy').innerHTML = 'Buy dodo for ' +  dodo.cost + ' happy points';
-			document.getElementById('flamingoBuy').innerHTML = 'Buy flamingo for ' +  flamingo.cost + ' happy points';
-			document.getElementById('peacockBuy').innerHTML = 'Buy peacock for ' +  peacock.cost + ' happy points';
-			document.getElementById('blackbirdBuy').innerHTML = 'Buy blackbird for ' +  blackbird.cost + ' happy points';
-			document.getElementById('chickenBuy').innerHTML = 'Buy chicken for ' +  chicken.cost + ' happy points';
-			document.getElementById('gooseBuy').innerHTML = 'Buy goose for ' +  goose.cost + ' happy points';
-			document.getElementById('phoenixBuy').innerHTML = 'Buy phoenix for ' +  phoenix.cost + ' happy points';
-			document.getElementById('lizardBuy').innerHTML = 'Buy lizard for ' +  lizard.cost + ' happy points';
-			document.getElementById('dragonBuy').innerHTML = 'Buy dragon for ' +  dragon.cost + ' happy points';
-			document.getElementById('whaleBuy').innerHTML = 'Buy whale for ' +  whale.cost + ' happy points';
-			document.getElementById('dolphinBuy').innerHTML = 'Buy dolphin for ' +  dolphin.cost + ' happy points';
-			document.getElementById('sealBuy').innerHTML = 'Buy seal for ' +  seal.cost + ' happy points';
-			document.getElementById('basicBuy').innerHTML = 'Buy betta fish for ' +  basic.cost + ' happy points';
-			document.getElementById('tropicalBuy').innerHTML = 'Buy tropical fish for ' +  tropical.cost + ' happy points';
-			document.getElementById('pufferBuy').innerHTML = 'Buy pufferfish for ' +  puffer.cost + ' happy points';
-			document.getElementById('sharkBuy').innerHTML = 'Buy shark for ' +  shark.cost + ' happy points';
-			document.getElementById('octopusBuy').innerHTML = 'Buy octopus for ' +  octopus.cost + ' happy points';
-			document.getElementById('jellyfishBuy').innerHTML = 'Buy jellyfish for ' +  jellyfish.cost + ' happy points';
-			document.getElementById('beeBuy').innerHTML = 'Buy bee for ' +  bee.cost + ' happy points';
-			document.getElementById('shrimpBuy').innerHTML = 'Buy shrimp for ' +  shrimp.cost + ' happy points';
-			document.getElementById('squidBuy').innerHTML = 'Buy squid for ' +  squid.cost + ' happy points';
+document.getElementById('daisyBuy').innerHTML = 'Buy daisy for ' +  daisy.cost + ' happy points';
+document.getElementById('tulipBuy').innerHTML = 'Buy tulip for ' +  tulip.cost + ' happy points';
+document.getElementById('roseBuy').innerHTML = 'Buy rose for ' +  rose.cost + ' happy points';
+document.getElementById('sunflowerBuy').innerHTML = 'Buy sunflower for ' +  sunflower.cost + ' happy points';
+document.getElementById('cactusBuy').innerHTML = 'Buy cactus for ' +  cactus.cost + ' happy points';
+document.getElementById('parrotBuy').innerHTML = 'Buy parrot for ' +  parrot.cost + ' happy points';
+document.getElementById('duckBuy').innerHTML = 'Buy duck for ' +  duck.cost + ' happy points';
+document.getElementById('catBuy').innerHTML = 'Buy cat for ' +  cat.cost + ' happy points';
+document.getElementById('dogBuy').innerHTML = 'Buy dog for ' +  dog.cost + ' happy points';
+document.getElementById('bearBuy').innerHTML = 'Buy bear for ' +  bear.cost + ' happy points';
+document.getElementById('turtleBuy').innerHTML = 'Buy turtle for ' +  turtle.cost + ' happy points';
+document.getElementById('bunnyBuy').innerHTML = 'Buy bunny for ' +  bunny.cost + ' happy points';
+document.getElementById('starfishBuy').innerHTML = 'Buy starfish for ' +  starfish.cost + ' happy points';
+document.getElementById('wateringcanBuy').innerHTML = 'Buy wateringcan for ' +  wateringcan.cost + ' happy points';
+document.getElementById('birdfeederBuy').innerHTML = 'Buy birdfeeder for ' +  birdfeeder.cost + ' happy points';
+document.getElementById('lipstickBuy').innerHTML = 'Buy lipstick for ' +  lipstick.cost + ' happy points';
+document.getElementById('monkeyBuy').innerHTML = 'Buy monkey for ' +  monkey.cost + ' happy points';
+document.getElementById('tigerBuy').innerHTML = 'Buy tiger for ' +  tiger.cost + ' happy points';
+document.getElementById('jackassBuy').innerHTML = 'Buy jackass for ' +  jackass.cost + ' happy points';
+document.getElementById('horseBuy').innerHTML = 'Buy horse for ' +  horse.cost + ' happy points';
+document.getElementById('zebraBuy').innerHTML = 'Buy zebra for ' +  zebra.cost + ' happy points';
+document.getElementById('deerBuy').innerHTML = 'Buy deer for ' +  deer.cost + ' happy points';
+document.getElementById('cowBuy').innerHTML = 'Buy cow for ' +  cow.cost + ' happy points';
+document.getElementById('pigBuy').innerHTML = 'Buy pig for ' +  pig.cost + ' happy points';
+document.getElementById('sheepBuy').innerHTML = 'Buy sheep for ' +  sheep.cost + ' happy points';
+document.getElementById('camelBuy').innerHTML = 'Buy camel for ' +  camel.cost + ' happy points';
+document.getElementById('giraffeBuy').innerHTML = 'Buy giraffe for ' +  giraffe.cost + ' happy points';
+document.getElementById('elephantBuy').innerHTML = 'Buy elephant for ' +  elephant.cost + ' happy points';
+document.getElementById('hedgehogBuy').innerHTML = 'Buy hedgehog for ' +  hedgehog.cost + ' happy points';
+document.getElementById('batBuy').innerHTML = 'Buy bat for ' +  bat.cost + ' happy points';
+document.getElementById('slothBuy').innerHTML = 'Buy sloth for ' +  sloth.cost + ' happy points';
+document.getElementById('otterBuy').innerHTML = 'Buy otter for ' +  otter.cost + ' happy points';
+document.getElementById('kangarooBuy').innerHTML = 'Buy kangaroo for ' +  kangaroo.cost + ' happy points';
+document.getElementById('hatchlingBuy').innerHTML = 'Buy hatchling for ' +  hatchling.cost + ' happy points';
+document.getElementById('babyBuy').innerHTML = 'Buy baby for ' +  baby.cost + ' happy points';
+document.getElementById('songbirdBuy').innerHTML = 'Buy songbird for ' +  songbird.cost + ' happy points';
+document.getElementById('penguinBuy').innerHTML = 'Buy penguin for ' +  penguin.cost + ' happy points';
+document.getElementById('doveBuy').innerHTML = 'Buy dove for ' +  dove.cost + ' happy points';
+document.getElementById('swanBuy').innerHTML = 'Buy swan for ' +  swan.cost + ' happy points';
+document.getElementById('owlBuy').innerHTML = 'Buy owl for ' +  owl.cost + ' happy points';
+document.getElementById('dodoBuy').innerHTML = 'Buy dodo for ' +  dodo.cost + ' happy points';
+document.getElementById('flamingoBuy').innerHTML = 'Buy flamingo for ' +  flamingo.cost + ' happy points';
+document.getElementById('peacockBuy').innerHTML = 'Buy peacock for ' +  peacock.cost + ' happy points';
+document.getElementById('blackbirdBuy').innerHTML = 'Buy blackbird for ' +  blackbird.cost + ' happy points';
+document.getElementById('chickenBuy').innerHTML = 'Buy chicken for ' +  chicken.cost + ' happy points';
+document.getElementById('gooseBuy').innerHTML = 'Buy goose for ' +  goose.cost + ' happy points';
+document.getElementById('phoenixBuy').innerHTML = 'Buy phoenix for ' +  phoenix.cost + ' happy points';
+document.getElementById('lizardBuy').innerHTML = 'Buy lizard for ' +  lizard.cost + ' happy points';
+document.getElementById('dragonBuy').innerHTML = 'Buy dragon for ' +  dragon.cost + ' happy points';
+document.getElementById('whaleBuy').innerHTML = 'Buy whale for ' +  whale.cost + ' happy points';
+document.getElementById('dolphinBuy').innerHTML = 'Buy dolphin for ' +  dolphin.cost + ' happy points';
+document.getElementById('sealBuy').innerHTML = 'Buy seal for ' +  seal.cost + ' happy points';
+document.getElementById('bettaBuy').innerHTML = 'Buy betta for ' +  betta.cost + ' happy points';
+document.getElementById('tropicalBuy').innerHTML = 'Buy tropical for ' +  tropical.cost + ' happy points';
+document.getElementById('pufferfishBuy').innerHTML = 'Buy pufferfish for ' +  pufferfish.cost + ' happy points';
+document.getElementById('sharkBuy').innerHTML = 'Buy shark for ' +  shark.cost + ' happy points';
+document.getElementById('octopusBuy').innerHTML = 'Buy octopus for ' +  octopus.cost + ' happy points';
+document.getElementById('jellyfishBuy').innerHTML = 'Buy jellyfish for ' +  jellyfish.cost + ' happy points';
+document.getElementById('beeBuy').innerHTML = 'Buy bee for ' +  bee.cost + ' happy points';
+document.getElementById('shrimpBuy').innerHTML = 'Buy shrimp for ' +  shrimp.cost + ' happy points';
 
-            }, 1000);   //end second clock 
+        }, 1000);   //end second clock 
 			
 
 			
@@ -1117,272 +1156,233 @@
             document.getElementById('smoochButton').addEventListener('click', function() {     //smooch button
 				smooch = smooch + 1;
 				happy = happy + smoochpower;
-				mess = "Smooch!";
-				smoochgardenvar = smoochgardenvar + "💋";
-				document.getElementById("smoochcounter").innerHTML = "Smooches: " +  smooch; 
-				document.getElementById("happypointscounter").innerHTML = "Happy Points: " +  happy; 
+				mess = 'Smooch!';
+				smoochgardenvar = smoochgardenvar + '💋';
+				document.getElementById('smoochcounter').innerHTML = 'Smooches: ' +  smooch; 
+				document.getElementById('happypointscounter').innerHTML = 'Happy Points: ' +  happy; 
 			}); 
 //inventory unlock on daisy
 			document.getElementById('daisyBuy').addEventListener('click', function() { 
 				if (happy >= daisy.cost) {
-				document.getElementById("inventory").style.display = "block";
+					document.getElementById('inventory').style.display = 'block';
 				}
             });
 					//store buttons
+	
 			document.getElementById('daisyBuy').addEventListener('click', function() { 
 				if (happy >= daisy.cost) {
 				daisy.count=daisy.count+1;
 				happy = happy-daisy.cost;
 				daisy.cost=Math.round(daisy.cost*daisy.costinc);
-				flowersvar = flowersvar + "🌼";
-				mess = "You got a daisy!"
-				document.getElementById("daisiescounter").innerHTML = "Daisies: " +  daisy.count; 
+				flowersvar = flowersvar + '🌼';
+				mess = 'You got a daisy!'
+				document.getElementById('daisycounter').style.display = 'inline';
 				}
 				else {
-				mess = "Insufficient happy points :(";
+				mess = 'Insufficient happy points :(';
 				}
-            });
-			document.getElementById('tulipBuy').addEventListener('click', function() { 
+            });			document.getElementById('tulipBuy').addEventListener('click', function() { 
 				if (happy >= tulip.cost) {
 				tulip.count=tulip.count+1;
 				happy = happy-tulip.cost;
 				tulip.cost=Math.round(tulip.cost*tulip.costinc);
-				mess = "You got a tulip!"
-				flowersvar = flowersvar + "🌷";
-				document.getElementById("tulipscounter").innerHTML = "Tulips: " +  tulip.count; 
-				document.getElementById("tulipscounter").style.display = "inline";
-				document.getElementById("tulipBuy").innerHTML = "Buy tulip for " +  tulip.cost + " happy points"; 
+				flowersvar = flowersvar + '🌷';
+				mess = 'You got a tulip!'
+				document.getElementById('tulipcounter').style.display = 'inline';
 				}
 				else {
-				mess = "Insufficient happy points :(";
+				mess = 'Insufficient happy points :(';
 				}
-            }); 
-			document.getElementById('roseBuy').addEventListener('click', function() { 
+            });			document.getElementById('roseBuy').addEventListener('click', function() { 
 				if (happy >= rose.cost) {
 				rose.count=rose.count+1;
 				happy = happy-rose.cost;
 				rose.cost=Math.round(rose.cost*rose.costinc);
-				flowersvar = flowersvar + "🌹";
-				mess = "You got a rose!"
-				document.getElementById("rosescounter").innerHTML = "Roses: " +  rose.count; 
-				document.getElementById("roseBuy").innerHTML = "Buy rose for " +  rose.cost + " happy points"; 
-				document.getElementById("rosescounter").style.display = "inline";
+				flowersvar = flowersvar + '🌹';
+				mess = 'You got a rose!'
+				document.getElementById('rosecounter').style.display = 'inline';
 				}
 				else {
-				mess = "Insufficient happy points :(";
+				mess = 'Insufficient happy points :(';
 				}
-            }); 
-			
-			document.getElementById('sunflowerBuy').addEventListener('click', function() { 
+            });			document.getElementById('sunflowerBuy').addEventListener('click', function() { 
 				if (happy >= sunflower.cost) {
 				sunflower.count=sunflower.count+1;
 				happy = happy-sunflower.cost;
 				sunflower.cost=Math.round(sunflower.cost*sunflower.costinc);
-				flowersvar = flowersvar + "🌻";
-				mess = "You got a sunflower!"
-				document.getElementById("sunflowerscounter").innerHTML = "Sunflowers: " +  sunflower.count; 
-				document.getElementById("sunflowerBuy").innerHTML = "Buy sunflower for " +  sunflower.cost + " happy points"; 
-				document.getElementById("sunflowerscounter").style.display = "inline";
+				flowersvar = flowersvar + '🌻';
+				mess = 'You got a sunflower!'
+				document.getElementById('sunflowercounter').style.display = 'inline';
 				}
 				else {
-				mess = "Insufficient happy points :(";
+				mess = 'Insufficient happy points :(';
 				}
-            }); 
-			document.getElementById('cactusBuy').addEventListener('click', function() { 
+            });			document.getElementById('cactusBuy').addEventListener('click', function() { 
 				if (happy >= cactus.cost) {
 				cactus.count=cactus.count+1;
 				happy = happy-cactus.cost;
 				cactus.cost=Math.round(cactus.cost*cactus.costinc);
-				flowersvar = flowersvar + "🌵";
-				mess = "You got a cactus!"
-				document.getElementById("cactuscounter").innerHTML = "Cacti: " +  cactus.count; 
-				document.getElementById("cactusBuy").innerHTML = "Buy cactus for " +  cactus.cost + " happy points"; 
-				document.getElementById("cactuscounter").style.display = "inline";
+				flowersvar = flowersvar + '🌵';
+				mess = 'You got a cactus!'
+				document.getElementById('cactuscounter').style.display = 'inline';
 				}
 				else {
-				mess = "Insufficient happy points :(";
+				mess = 'Insufficient happy points :(';
 				}
-            }); 
-			document.getElementById('duckBuy').addEventListener('click', function() { 
-				if (happy >= duck.cost) {
-				duck.count=duck.count+1;
-				happy = happy-duck.cost;
-				duck.cost=Math.round(duck.cost*duck.costinc);
-				animalsvar = animalsvar + "🦆";
-				mess = "You got a duck! Quack quack!"
-				document.getElementById("duckcounter").innerHTML = "Ducks: " +  duck.count; 
-				document.getElementById("duckBuy").innerHTML = "Buy duck for " +  duck.cost + " happy points"; 
-				document.getElementById("duckcounter").style.display = "inline";
-				}
-				else {
-				mess = "Insufficient happy points :(";
-				}
-            }); 
-			document.getElementById('parrotBuy').addEventListener('click', function() { 
+            });			document.getElementById('parrotBuy').addEventListener('click', function() { 
 				if (happy >= parrot.cost) {
 				parrot.count=parrot.count+1;
 				happy = happy-parrot.cost;
 				parrot.cost=Math.round(parrot.cost*parrot.costinc);
-				animalsvar = animalsvar + "🦜";
-				mess = "You got a parrot! Hi Birdie!"
-				document.getElementById("parrotcounter").innerHTML = "Parrots: " +  parrot.count; 
-				document.getElementById("parrotBuy").innerHTML = "Buy parrot for " +  parrot.cost + " happy points"; 
-				document.getElementById("parrotcounter").style.display = "inline";
+				animalsvar = animalsvar + '🦜';
+				mess = 'You got a parrot!'
+				document.getElementById('parrotcounter').style.display = 'inline';
 				}
 				else {
-				mess = "Insufficient happy points :(";
+				mess = 'Insufficient happy points :(';
 				}
-            }); 
-	document.getElementById('starfishBuy').addEventListener('click', function() { 
-				if (happy >= starfish.cost) {
-				starfish.count=starfish.count+1;
-				happy = happy-starfish.cost;
-				starfish.cost=Math.round(starfish.cost*starfish.costinc);
-				animalsvar = animalsvar + "⭐";
-				mess = "You got a starfish!"
-				document.getElementById("starfishcounter").innerHTML = "Starfish: " +  starfish.count; 
-				document.getElementById("starfishBuy").innerHTML = "Buy starfish for " +  starfish.cost + " happy points"; 
-				document.getElementById("starfishcounter").style.display = "inline";
+            });			document.getElementById('duckBuy').addEventListener('click', function() { 
+				if (happy >= duck.cost) {
+				duck.count=duck.count+1;
+				happy = happy-duck.cost;
+				duck.cost=Math.round(duck.cost*duck.costinc);
+				animalsvar = animalsvar + '🦆';
+				mess = 'You got a duck!'
+				document.getElementById('duckcounter').style.display = 'inline';
 				}
 				else {
-				mess = "Insufficient happy points :(";
+				mess = 'Insufficient happy points :(';
 				}
-            }); 
-			document.getElementById('turtleBuy').addEventListener('click', function() { 
-				if (happy >= turtle.cost) {
-				turtle.count=turtle.count+1;
-				happy = happy-turtle.cost;
-				turtle.cost=Math.round(turtle.cost*turtle.costinc);
-				animalsvar = animalsvar + "🐢";
-				mess = "You got a turtle!"
-				document.getElementById("turtlecounter").innerHTML = "Turtles: " +  turtle.count; 
-				document.getElementById("turtleBuy").innerHTML = "Buy turtle for " +  turtle.cost + " happy points"; 
-				document.getElementById("turtlecounter").style.display = "inline";
-				}
-				else {
-				mess = "Insufficient happy points :(";
-				}
-            }); 
-			document.getElementById('bunnyBuy').addEventListener('click', function() { 
-				if (happy >= bunny.cost) {
-				bunny.count=bunny.count+1;
-				happy = happy-bunny.cost;
-				bunny.cost=Math.round(bunny.cost*bunny.costinc);
-				animalsvar = animalsvar + "🐇";
-				mess = "You got a bunny!"
-				document.getElementById("bunnycounter").innerHTML = "Bunnies: " +  bunny.count; 
-				document.getElementById("bunnyBuy").innerHTML = "Buy bunny for " +  bunny.cost + " happy points"; 
-				document.getElementById("bunnycounter").style.display = "inline";
+            });			document.getElementById('catBuy').addEventListener('click', function() { 
+				if (happy >= cat.cost) {
+				cat.count=cat.count+1;
+				happy = happy-cat.cost;
+				cat.cost=Math.round(cat.cost*cat.costinc);
+				if (happy%2==0) { 
+						animalsvar = animalsvar + '🐈';
+						mess = 'You got a cat!'
+					} else {
+						animalsvar = animalsvar + '🐈‍⬛';
+						mess = 'You got a black cat! Nice!'
+						blackcatcount = blackcatcount + 1;
+					};
+				document.getElementById('catcounter').style.display = 'inline';
 				}
 				else {
-				mess = "Insufficient happy points :(";
+				mess = 'Insufficient happy points :(';
 				}
-            }); 
-			document.getElementById('dogBuy').addEventListener('click', function() { 
+            });
+						document.getElementById('dogBuy').addEventListener('click', function() { 
 				if (happy >= dog.cost) {
 				dog.count=dog.count+1;
 				happy = happy-dog.cost;
 				dog.cost=Math.round(dog.cost*dog.costinc);
-				animalsvar = animalsvar + "🐕";
-				mess = "You got a dog!"
-				document.getElementById("dogcounter").innerHTML = "Cacti: " +  dog.count; 
-				document.getElementById("dogBuy").innerHTML = "Buy dog for " +  dog.cost + " happy points"; 
-				document.getElementById("dogcounter").style.display = "inline";
+				animalsvar = animalsvar + '🐕';
+				mess = 'You got a dog!'
+				document.getElementById('dogcounter').style.display = 'inline';
 				}
 				else {
-				mess = "Insufficient happy points :(";
+				mess = 'Insufficient happy points :(';
 				}
-            }); 
-			document.getElementById('catBuy').addEventListener('click', function() { 
-				if (happy >= cat.cost) {
-					cat.count=cat.count+1;
-					happy = happy-cat.cost;
-					cat.cost=Math.round(cat.cost*cat.costinc);
-					if (happy%2==0) { 
-						animalsvar = animalsvar + "🐈";
-						mess = "You got a cat!"
-					} else {
-						animalsvar = animalsvar + "🐈‍⬛";
-						mess = "You got a black cat! Nice!"
-						blackcatcount = blackcatcount + 1;
-					}
-				document.getElementById("catBuy").innerHTML = "Buy cat for " +  cat.cost + " happy points"; 
-				document.getElementById("catcounter").style.display = "inline";
-				}
-				else {
-				mess = "Insufficient happy points :(";
-				}
-            }); 
-			document.getElementById('bearBuy').addEventListener('click', function() { 
+            });			document.getElementById('bearBuy').addEventListener('click', function() { 
 				if (happy >= bear.cost) {
 				bear.count=bear.count+1;
 				happy = happy-bear.cost;
 				bear.cost=Math.round(bear.cost*bear.costinc);
-				animalsvar = animalsvar + "🐻";
-				mess = "You got a bear!"
-				document.getElementById("bearcounter").innerHTML = "Cacti: " +  bear.count; 
-				document.getElementById("bearBuy").innerHTML = "Buy bear for " +  bear.cost + " happy points"; 
-				document.getElementById("bearcounter").style.display = "inline";
-				} else {
-				mess = "Insufficient happy points. You know, maybe that's for the best.";
-				}
-            }); 
-			document.getElementById('lipstickBuy').addEventListener('click', function() { 
-				if (happy >= lipstick.cost) {
-				lipstick.count=lipstick.count+1;
-				happy = happy-lipstick.cost;
-				lipstick.cost=Math.round(lipstick.cost*lipstick.costinc);
-				smoochpower = smoochpower * lipstick.power;
-				stuffvar = stuffvar + "💄";
-				mess = "You put on some lipstick 😘"
-				document.getElementById("lipstickBuy").innerHTML = "Buy lipstick for " +  lipstick.cost + " happy points"; 
+				animalsvar = animalsvar + '🐻';
+				mess = 'You got a bear!'
+				document.getElementById('bearcounter').style.display = 'inline';
 				}
 				else {
-				mess = "Insufficient happy points :(";
+				mess = 'Insufficient happy points :(';
 				}
-            }); 
-			document.getElementById('wateringcanBuy').addEventListener('click', function() { 
+            });			document.getElementById('turtleBuy').addEventListener('click', function() { 
+				if (happy >= turtle.cost) {
+				turtle.count=turtle.count+1;
+				happy = happy-turtle.cost;
+				turtle.cost=Math.round(turtle.cost*turtle.costinc);
+				animalsvar = animalsvar + '🐢';
+				mess = 'You got a turtle!'
+				document.getElementById('turtlecounter').style.display = 'inline';
+				}
+				else {
+				mess = 'Insufficient happy points :(';
+				}
+            });			document.getElementById('bunnyBuy').addEventListener('click', function() { 
+				if (happy >= bunny.cost) {
+				bunny.count=bunny.count+1;
+				happy = happy-bunny.cost;
+				bunny.cost=Math.round(bunny.cost*bunny.costinc);
+				animalsvar = animalsvar + '🐇';
+				mess = 'You got a bunny!'
+				document.getElementById('bunnycounter').style.display = 'inline';
+				}
+				else {
+				mess = 'Insufficient happy points :(';
+				}
+            });			document.getElementById('starfishBuy').addEventListener('click', function() { 
+				if (happy >= starfish.cost) {
+				starfish.count=starfish.count+1;
+				happy = happy-starfish.cost;
+				starfish.cost=Math.round(starfish.cost*starfish.costinc);
+				animalsvar = animalsvar + '⭐';
+				mess = 'You got a starfish!'
+				document.getElementById('starfishcounter').style.display = 'inline';
+				}
+				else {
+				mess = 'Insufficient happy points :(';
+				}
+            });			document.getElementById('wateringcanBuy').addEventListener('click', function() { 
 				if (happy >= wateringcan.cost) {
 				wateringcan.count=wateringcan.count+1;
 				happy = happy-wateringcan.cost;
 				wateringcan.cost=Math.round(wateringcan.cost*wateringcan.costinc);
-				stuffvar = stuffvar + "🚿";
-				mess = "You got a watering can."
-				document.getElementById("wateringcanBuy").innerHTML = "Buy watering can for " +  wateringcan.cost + " happy points"; 
+				stuffvar = stuffvar + '🚿';
+				mess = 'You got a wateringcan!'
+				document.getElementById('wateringcancounter').style.display = 'inline';
 				}
 				else {
-				mess = "Insufficient happy points :(";
+				mess = 'Insufficient happy points :(';
 				}
-            }); 
-			document.getElementById('birdfeederBuy').addEventListener('click', function() { 
+            });			document.getElementById('birdfeederBuy').addEventListener('click', function() { 
 				if (happy >= birdfeeder.cost) {
 				birdfeeder.count=birdfeeder.count+1;
 				happy = happy-birdfeeder.cost;
 				birdfeeder.cost=Math.round(birdfeeder.cost*birdfeeder.costinc);
-				stuffvar = stuffvar + "🪺";
-				mess = "You got a bird feeder!"
-				document.getElementById("birdfeederBuy").innerHTML = "Buy bird feeder for " +  birdfeeder.cost + " happy points"; 
+				stuffvar = stuffvar + '🪺';
+				mess = 'You got a birdfeeder!'
+				document.getElementById('birdfeedercounter').style.display = 'inline';
 				}
 				else {
-				mess = "Insufficient happy points :(";
+				mess = 'Insufficient happy points :(';
 				}
-            }); 
-			document.getElementById('monkeyBuy').addEventListener('click', function() { 
+            });			document.getElementById('lipstickBuy').addEventListener('click', function() { 
+				if (happy >= lipstick.cost) {
+				lipstick.count=lipstick.count+1;
+				happy = happy-lipstick.cost;
+				lipstick.cost=Math.round(lipstick.cost*lipstick.costinc);
+								smoochpower = smoochpower * lipstick.power;
+				stuffvar = stuffvar + '💄';
+				mess = 'You put on some lipstick 😘';
+				document.getElementById('lipstickcounter').style.display = 'inline';
+				}
+				else {
+				mess = 'Insufficient happy points :(';
+				}
+            });
+						document.getElementById('monkeyBuy').addEventListener('click', function() { 
 				if (happy >= monkey.cost) {
 				monkey.count=monkey.count+1;
 				happy = happy-monkey.cost;
 				monkey.cost=Math.round(monkey.cost*monkey.costinc);
 				animalsvar = animalsvar + '🐒';
 				mess = 'You got a monkey!'
-				document.getElementById('monkeycounter').innerHTML = 'Monkeys: ' +  monkey.count; 
-				document.getElementById('monkeyBuy').innerHTML = 'Buy monkey for ' +  monkey.cost + ' happy points'; 
 				document.getElementById('monkeycounter').style.display = 'inline';
 				}
 				else {
 				mess = 'Insufficient happy points :(';
 				}
-            }); 
-			document.getElementById('tigerBuy').addEventListener('click', function() { 
+            });			document.getElementById('tigerBuy').addEventListener('click', function() { 
 				if (happy >= tiger.cost) {
 				tiger.count=tiger.count+1;
 				happy = happy-tiger.cost;
@@ -1394,8 +1394,7 @@
 				else {
 				mess = 'Insufficient happy points :(';
 				}
-            }); 
-			document.getElementById('jackassBuy').addEventListener('click', function() { 
+            });			document.getElementById('jackassBuy').addEventListener('click', function() { 
 				if (happy >= jackass.cost) {
 				jackass.count=jackass.count+1;
 				happy = happy-jackass.cost;
@@ -1407,8 +1406,7 @@
 				else {
 				mess = 'Insufficient happy points :(';
 				}
-            }); 
-			document.getElementById('horseBuy').addEventListener('click', function() { 
+            });			document.getElementById('horseBuy').addEventListener('click', function() { 
 				if (happy >= horse.cost) {
 				horse.count=horse.count+1;
 				happy = happy-horse.cost;
@@ -1420,8 +1418,7 @@
 				else {
 				mess = 'Insufficient happy points :(';
 				}
-            }); 
-			document.getElementById('zebraBuy').addEventListener('click', function() { 
+            });			document.getElementById('zebraBuy').addEventListener('click', function() { 
 				if (happy >= zebra.cost) {
 				zebra.count=zebra.count+1;
 				happy = happy-zebra.cost;
@@ -1433,8 +1430,7 @@
 				else {
 				mess = 'Insufficient happy points :(';
 				}
-            }); 
-			document.getElementById('deerBuy').addEventListener('click', function() { 
+            });			document.getElementById('deerBuy').addEventListener('click', function() { 
 				if (happy >= deer.cost) {
 				deer.count=deer.count+1;
 				happy = happy-deer.cost;
@@ -1446,8 +1442,7 @@
 				else {
 				mess = 'Insufficient happy points :(';
 				}
-            }); 
-			document.getElementById('cowBuy').addEventListener('click', function() { 
+            });			document.getElementById('cowBuy').addEventListener('click', function() { 
 				if (happy >= cow.cost) {
 				cow.count=cow.count+1;
 				happy = happy-cow.cost;
@@ -1459,8 +1454,7 @@
 				else {
 				mess = 'Insufficient happy points :(';
 				}
-            }); 
-			document.getElementById('pigBuy').addEventListener('click', function() { 
+            });			document.getElementById('pigBuy').addEventListener('click', function() { 
 				if (happy >= pig.cost) {
 				pig.count=pig.count+1;
 				happy = happy-pig.cost;
@@ -1472,8 +1466,7 @@
 				else {
 				mess = 'Insufficient happy points :(';
 				}
-            }); 
-			document.getElementById('sheepBuy').addEventListener('click', function() { 
+            });			document.getElementById('sheepBuy').addEventListener('click', function() { 
 				if (happy >= sheep.cost) {
 				sheep.count=sheep.count+1;
 				happy = happy-sheep.cost;
@@ -1485,8 +1478,7 @@
 				else {
 				mess = 'Insufficient happy points :(';
 				}
-            }); 
-			document.getElementById('camelBuy').addEventListener('click', function() { 
+            });			document.getElementById('camelBuy').addEventListener('click', function() { 
 				if (happy >= camel.cost) {
 				camel.count=camel.count+1;
 				happy = happy-camel.cost;
@@ -1498,8 +1490,7 @@
 				else {
 				mess = 'Insufficient happy points :(';
 				}
-            }); 
-			document.getElementById('giraffeBuy').addEventListener('click', function() { 
+            });			document.getElementById('giraffeBuy').addEventListener('click', function() { 
 				if (happy >= giraffe.cost) {
 				giraffe.count=giraffe.count+1;
 				happy = happy-giraffe.cost;
@@ -1511,8 +1502,7 @@
 				else {
 				mess = 'Insufficient happy points :(';
 				}
-            }); 
-			document.getElementById('elephantBuy').addEventListener('click', function() { 
+            });			document.getElementById('elephantBuy').addEventListener('click', function() { 
 				if (happy >= elephant.cost) {
 				elephant.count=elephant.count+1;
 				happy = happy-elephant.cost;
@@ -1524,8 +1514,7 @@
 				else {
 				mess = 'Insufficient happy points :(';
 				}
-            }); 
-			document.getElementById('hedgehogBuy').addEventListener('click', function() { 
+            });			document.getElementById('hedgehogBuy').addEventListener('click', function() { 
 				if (happy >= hedgehog.cost) {
 				hedgehog.count=hedgehog.count+1;
 				happy = happy-hedgehog.cost;
@@ -1537,50 +1526,43 @@
 				else {
 				mess = 'Insufficient happy points :(';
 				}
-            }); 
-			document.getElementById('batBuy').addEventListener('click', function() { 
+            });			document.getElementById('batBuy').addEventListener('click', function() { 
 				if (happy >= bat.cost) {
 				bat.count=bat.count+1;
 				happy = happy-bat.cost;
 				bat.cost=Math.round(bat.cost*bat.costinc);
 				animalsvar = animalsvar + '🦇';
-				mess = 'You got a bat!';
+				mess = 'You got a bat!'
 				document.getElementById('batcounter').style.display = 'inline';
 				}
 				else {
 				mess = 'Insufficient happy points :(';
 				}
-            }); 
-			document.getElementById('slothBuy').addEventListener('click', function() { 
+            });			document.getElementById('slothBuy').addEventListener('click', function() { 
 				if (happy >= sloth.cost) {
 				sloth.count=sloth.count+1;
 				happy = happy-sloth.cost;
 				sloth.cost=Math.round(sloth.cost*sloth.costinc);
 				animalsvar = animalsvar + '🦥';
-				mess = 'You got a sloth!!';
-				loveinterval = loveinterval - 1;
-				document.getElementById('slothcounter').innerHTML = 'sloths: ' +  sloth.count; 
-				document.getElementById('slothBuy').innerHTML = 'Buy sloth for ' +  sloth.cost + ' happy points'; 
+				mess = 'You got a sloth!'
 				document.getElementById('slothcounter').style.display = 'inline';
 				}
 				else {
 				mess = 'Insufficient happy points :(';
 				}
-            }); 
-			document.getElementById('otterBuy').addEventListener('click', function() { 
+            });			document.getElementById('otterBuy').addEventListener('click', function() { 
 				if (happy >= otter.cost) {
 				otter.count=otter.count+1;
 				happy = happy-otter.cost;
 				otter.cost=Math.round(otter.cost*otter.costinc);
 				animalsvar = animalsvar + '🦦';
-				mess = 'You got a otter!';
+				mess = 'You got a otter!'
 				document.getElementById('ottercounter').style.display = 'inline';
 				}
 				else {
 				mess = 'Insufficient happy points :(';
 				}
-            }); 
-			document.getElementById('kangarooBuy').addEventListener('click', function() { 
+            });			document.getElementById('kangarooBuy').addEventListener('click', function() { 
 				if (happy >= kangaroo.cost) {
 				kangaroo.count=kangaroo.count+1;
 				happy = happy-kangaroo.cost;
@@ -1592,8 +1574,7 @@
 				else {
 				mess = 'Insufficient happy points :(';
 				}
-            }); 
-			document.getElementById('hatchlingBuy').addEventListener('click', function() { 
+            });			document.getElementById('hatchlingBuy').addEventListener('click', function() { 
 				if (happy >= hatchling.cost) {
 				hatchling.count=hatchling.count+1;
 				happy = happy-hatchling.cost;
@@ -1605,8 +1586,7 @@
 				else {
 				mess = 'Insufficient happy points :(';
 				}
-            }); 
-			document.getElementById('babyBuy').addEventListener('click', function() { 
+            });			document.getElementById('babyBuy').addEventListener('click', function() { 
 				if (happy >= baby.cost) {
 				baby.count=baby.count+1;
 				happy = happy-baby.cost;
@@ -1618,415 +1598,396 @@
 				else {
 				mess = 'Insufficient happy points :(';
 				}
-            }); 
-			document.getElementById('songbirdBuy').addEventListener('click', function() { 
+            });			document.getElementById('songbirdBuy').addEventListener('click', function() { 
 				if (happy >= songbird.cost) {
-					songbird.count=songbird.count+1;
-					happy = happy-songbird.cost;
-					songbird.cost=Math.round(songbird.cost*songbird.costinc);
-					animalsvar = animalsvar + '🐦';
-					mess = 'You got a songbird!';
-					document.getElementById('songbirdcounter').style.display = 'inline';
-				} else {
-					mess = 'Insufficient happy points :(';
-				}
-            }); 
-			document.getElementById('penguinBuy').addEventListener('click', function() { 
-				if (happy >= penguin.cost) {
-					penguin.count=penguin.count+1;
-					happy = happy-penguin.cost;
-					penguin.cost=Math.round(penguin.cost*penguin.costinc);
-					animalsvar = animalsvar + '🐧';
-					mess = 'You got a penguin!';
-					document.getElementById('penguincounter').style.display = 'inline';
-				} else {
-				mess = 'Insufficient happy points :(';
-				}
-            }); 
-			document.getElementById('doveBuy').addEventListener('click', function() { 
-				if (happy >= dove.cost) {
-					dove.count=dove.count+1;
-					happy = happy-dove.cost;
-					dove.cost=Math.round(dove.cost*dove.costinc);
-					animalsvar = animalsvar + '🕊';
-					mess = 'You got a dove!';
-					document.getElementById('dovecounter').style.display = 'inline';
-				} else {
-					mess = 'Insufficient happy points :(';
-				}
-            }); 
-			document.getElementById('swanBuy').addEventListener('click', function() { 
-				if (happy >= swan.cost) {
-					swan.count=swan.count+1;
-					happy = happy-swan.cost;
-					swan.cost=Math.round(swan.cost*swan.costinc);
-					animalsvar = animalsvar + '🦢';
-					mess = 'You got a swan!';
-					document.getElementById('swancounter').style.display = 'inline';
+				songbird.count=songbird.count+1;
+				happy = happy-songbird.cost;
+				songbird.cost=Math.round(songbird.cost*songbird.costinc);
+				animalsvar = animalsvar + '🐦';
+				mess = 'You got a songbird!'
+				document.getElementById('songbirdcounter').style.display = 'inline';
 				}
 				else {
-					mess = 'Insufficient happy points :(';
+				mess = 'Insufficient happy points :(';
 				}
-            }); 
-			document.getElementById('owlBuy').addEventListener('click', function() { 
+            });			document.getElementById('penguinBuy').addEventListener('click', function() { 
+				if (happy >= penguin.cost) {
+				penguin.count=penguin.count+1;
+				happy = happy-penguin.cost;
+				penguin.cost=Math.round(penguin.cost*penguin.costinc);
+				animalsvar = animalsvar + '🐧';
+				mess = 'You got a penguin!'
+				document.getElementById('penguincounter').style.display = 'inline';
+				}
+				else {
+				mess = 'Insufficient happy points :(';
+				}
+            });			document.getElementById('doveBuy').addEventListener('click', function() { 
+				if (happy >= dove.cost) {
+				dove.count=dove.count+1;
+				happy = happy-dove.cost;
+				dove.cost=Math.round(dove.cost*dove.costinc);
+				animalsvar = animalsvar + '🕊';
+				mess = 'You got a dove!'
+				document.getElementById('dovecounter').style.display = 'inline';
+				}
+				else {
+				mess = 'Insufficient happy points :(';
+				}
+            });			document.getElementById('swanBuy').addEventListener('click', function() { 
+				if (happy >= swan.cost) {
+				swan.count=swan.count+1;
+				happy = happy-swan.cost;
+				swan.cost=Math.round(swan.cost*swan.costinc);
+				animalsvar = animalsvar + '🦢';
+				mess = 'You got a swan!'
+				document.getElementById('swancounter').style.display = 'inline';
+				}
+				else {
+				mess = 'Insufficient happy points :(';
+				}
+            });			document.getElementById('owlBuy').addEventListener('click', function() { 
 				if (happy >= owl.cost) {
-					owl.count=owl.count+1;
-					happy = happy-owl.cost;
-					owl.cost=Math.round(owl.cost*owl.costinc);
-					animalsvar = animalsvar + '🦉';
-					mess = 'You got a owl!';
-					document.getElementById('owlcounter').style.display = 'inline';
-				} else {
-					mess = 'Insufficient happy points :(';
+				owl.count=owl.count+1;
+				happy = happy-owl.cost;
+				owl.cost=Math.round(owl.cost*owl.costinc);
+				animalsvar = animalsvar + '🦉';
+				mess = 'You got a owl!'
+				document.getElementById('owlcounter').style.display = 'inline';
 				}
-            }); 
-			document.getElementById('dodoBuy').addEventListener('click', function() { 
+				else {
+				mess = 'Insufficient happy points :(';
+				}
+            });			document.getElementById('dodoBuy').addEventListener('click', function() { 
 				if (happy >= dodo.cost) {
-					dodo.count=dodo.count+1;
-					happy = happy-dodo.cost;
-					dodo.cost=Math.round(dodo.cost*dodo.costinc);
-					animalsvar = animalsvar + '🦤';
-					mess = 'You got a dodo!';
-					document.getElementById('dodocounter').style.display = 'inline';
-				} else {
-					mess = 'Insufficient happy points :(';
+				dodo.count=dodo.count+1;
+				happy = happy-dodo.cost;
+				dodo.cost=Math.round(dodo.cost*dodo.costinc);
+				animalsvar = animalsvar + '🦤';
+				mess = 'You got a dodo!'
+				document.getElementById('dodocounter').style.display = 'inline';
 				}
-            }); 
-			document.getElementById('flamingoBuy').addEventListener('click', function() { 
+				else {
+				mess = 'Insufficient happy points :(';
+				}
+            });			document.getElementById('flamingoBuy').addEventListener('click', function() { 
 				if (happy >= flamingo.cost) {
-					flamingo.count=flamingo.count+1;
-					happy = happy-flamingo.cost;
-					flamingo.cost=Math.round(flamingo.cost*flamingo.costinc);
-					animalsvar = animalsvar + '🦩';
-					mess = 'You got a flamingo!';
-					document.getElementById('flamingocounter').style.display = 'inline';
-				} else {
-					mess = 'Insufficient happy points :(';
+				flamingo.count=flamingo.count+1;
+				happy = happy-flamingo.cost;
+				flamingo.cost=Math.round(flamingo.cost*flamingo.costinc);
+				animalsvar = animalsvar + '🦩';
+				mess = 'You got a flamingo!'
+				document.getElementById('flamingocounter').style.display = 'inline';
 				}
-            }); 
-			document.getElementById('peacockBuy').addEventListener('click', function() { 
+				else {
+				mess = 'Insufficient happy points :(';
+				}
+            });			document.getElementById('peacockBuy').addEventListener('click', function() { 
 				if (happy >= peacock.cost) {
-					peacock.count=peacock.count+1;
-					happy = happy-peacock.cost;
-					peacock.cost=Math.round(peacock.cost*peacock.costinc);
-					animalsvar = animalsvar + '🦚';
-					mess = 'You got a peacock!';
-					document.getElementById('peacockcounter').style.display = 'inline';
-				} else {
-					mess = 'Insufficient happy points :(';
+				peacock.count=peacock.count+1;
+				happy = happy-peacock.cost;
+				peacock.cost=Math.round(peacock.cost*peacock.costinc);
+				animalsvar = animalsvar + '🦚';
+				mess = 'You got a peacock!'
+				document.getElementById('peacockcounter').style.display = 'inline';
 				}
-            }); 
-			document.getElementById('blackbirdBuy').addEventListener('click', function() { 
+				else {
+				mess = 'Insufficient happy points :(';
+				}
+            });			document.getElementById('blackbirdBuy').addEventListener('click', function() { 
 				if (happy >= blackbird.cost) {
-					blackbird.count=blackbird.count+1;
-					happy = happy-blackbird.cost;
-					blackbird.cost=Math.round(blackbird.cost*blackbird.costinc);
-					animalsvar = animalsvar + '⬛';
-					mess = 'You got a blackbird!';
-					document.getElementById('blackbirdcounter').style.display = 'inline';
-				} else {
-					mess = 'Insufficient happy points :(';
+				blackbird.count=blackbird.count+1;
+				happy = happy-blackbird.cost;
+				blackbird.cost=Math.round(blackbird.cost*blackbird.costinc);
+				animalsvar = animalsvar + '🐦‍⬛';
+				mess = 'You got a blackbird!'
+				document.getElementById('blackbirdcounter').style.display = 'inline';
 				}
-            }); 
-			document.getElementById('chickenBuy').addEventListener('click', function() { 
+				else {
+				mess = 'Insufficient happy points :(';
+				}
+            });			document.getElementById('chickenBuy').addEventListener('click', function() { 
 				if (happy >= chicken.cost) {
-					chicken.count=chicken.count+1;
-					happy = happy-chicken.cost;
-					chicken.cost=Math.round(chicken.cost*chicken.costinc);
-					animalsvar = animalsvar + '🐔';
-					mess = 'You got a chicken!';
-					document.getElementById('chickencounter').style.display = 'inline';
-				} else {
-					mess = 'Insufficient happy points :(';
+				chicken.count=chicken.count+1;
+				happy = happy-chicken.cost;
+				chicken.cost=Math.round(chicken.cost*chicken.costinc);
+				animalsvar = animalsvar + '🐔';
+				mess = 'You got a chicken!'
+				document.getElementById('chickencounter').style.display = 'inline';
 				}
-            }); 
-			document.getElementById('gooseBuy').addEventListener('click', function() { 
+				else {
+				mess = 'Insufficient happy points :(';
+				}
+            });			document.getElementById('gooseBuy').addEventListener('click', function() { 
 				if (happy >= goose.cost) {
-					goose.count=goose.count+1;
-					happy = happy-goose.cost;
-					goose.cost=Math.round(goose.cost*goose.costinc);
-					animalsvar = animalsvar + '🪿';
-					mess = 'You got a goose!';
-					document.getElementById('goosecounter').style.display = 'inline';
-				} else {
-					mess = 'Insufficient happy points :(';
+				goose.count=goose.count+1;
+				happy = happy-goose.cost;
+				goose.cost=Math.round(goose.cost*goose.costinc);
+				animalsvar = animalsvar + '🪿';
+				mess = 'You got a goose!'
+				document.getElementById('goosecounter').style.display = 'inline';
 				}
-            }); 
-			document.getElementById('phoenixBuy').addEventListener('click', function() { 
+				else {
+				mess = 'Insufficient happy points :(';
+				}
+            });			document.getElementById('phoenixBuy').addEventListener('click', function() { 
 				if (happy >= phoenix.cost) {
-					phoenix.count=phoenix.count+1;
-					happy = happy-phoenix.cost;
-					phoenix.cost=Math.round(phoenix.cost*phoenix.costinc);
-					animalsvar = animalsvar + '🔥';
-					mess = 'You got a phoenix!';
-					document.getElementById('phoenixcounter').style.display = 'inline';
-				} else {
-					mess = 'Insufficient happy points :(';
+				phoenix.count=phoenix.count+1;
+				happy = happy-phoenix.cost;
+				phoenix.cost=Math.round(phoenix.cost*phoenix.costinc);
+				animalsvar = animalsvar + '🔥';
+				mess = 'You got a phoenix!'
+				document.getElementById('phoenixcounter').style.display = 'inline';
 				}
-            }); 
-			document.getElementById('lizardBuy').addEventListener('click', function() { 
+				else {
+				mess = 'Insufficient happy points :(';
+				}
+            });			document.getElementById('lizardBuy').addEventListener('click', function() { 
 				if (happy >= lizard.cost) {
-					lizard.count=lizard.count+1;
-					happy = happy-lizard.cost;
-					lizard.cost=Math.round(lizard.cost*lizard.costinc);
-					animalsvar = animalsvar + '🦎';
-					mess = 'You got a lizard!';
-					document.getElementById('lizardcounter').style.display = 'inline';
-				} else {
-					mess = 'Insufficient happy points :(';
+				lizard.count=lizard.count+1;
+				happy = happy-lizard.cost;
+				lizard.cost=Math.round(lizard.cost*lizard.costinc);
+				animalsvar = animalsvar + '🦎';
+				mess = 'You got a lizard!'
+				document.getElementById('lizardcounter').style.display = 'inline';
 				}
-            }); 
-			document.getElementById('dragonBuy').addEventListener('click', function() { 
+				else {
+				mess = 'Insufficient happy points :(';
+				}
+            });			document.getElementById('dragonBuy').addEventListener('click', function() { 
 				if (happy >= dragon.cost) {
-					dragon.count=dragon.count+1;
-					happy = happy-dragon.cost;
-					dragon.cost=Math.round(dragon.cost*dragon.costinc);
-					animalsvar = animalsvar + '🐉';
-					mess = 'You got a dragon!';
-					document.getElementById('dragoncounter').style.display = 'inline';
-				} else {
-					mess = 'Insufficient happy points :(';
+				dragon.count=dragon.count+1;
+				happy = happy-dragon.cost;
+				dragon.cost=Math.round(dragon.cost*dragon.costinc);
+				animalsvar = animalsvar + '🐉';
+				mess = 'You got a dragon!'
+				document.getElementById('dragoncounter').style.display = 'inline';
 				}
-            }); 
-			document.getElementById('whaleBuy').addEventListener('click', function() { 
+				else {
+				mess = 'Insufficient happy points :(';
+				}
+            });			document.getElementById('whaleBuy').addEventListener('click', function() { 
 				if (happy >= whale.cost) {
-					whale.count=whale.count+1;
-					happy = happy-whale.cost;
-					whale.cost=Math.round(whale.cost*whale.costinc);
-					animalsvar = animalsvar + '🐋';
-					mess = 'You got a whale!';
-					document.getElementById('whalecounter').style.display = 'inline';
-				} else {
-					mess = 'Insufficient happy points :(';
+				whale.count=whale.count+1;
+				happy = happy-whale.cost;
+				whale.cost=Math.round(whale.cost*whale.costinc);
+				animalsvar = animalsvar + '🐋';
+				mess = 'You got a whale!'
+				document.getElementById('whalecounter').style.display = 'inline';
 				}
-            }); 
-			document.getElementById('dolphinBuy').addEventListener('click', function() { 
+				else {
+				mess = 'Insufficient happy points :(';
+				}
+            });			document.getElementById('dolphinBuy').addEventListener('click', function() { 
 				if (happy >= dolphin.cost) {
-					dolphin.count=dolphin.count+1;
-					happy = happy-dolphin.cost;
-					dolphin.cost=Math.round(dolphin.cost*dolphin.costinc);
-					animalsvar = animalsvar + '🐬';
-					mess = 'You got a dolphin!';
-					document.getElementById('dolphincounter').style.display = 'inline';
-				} else {
-					mess = 'Insufficient happy points :(';
+				dolphin.count=dolphin.count+1;
+				happy = happy-dolphin.cost;
+				dolphin.cost=Math.round(dolphin.cost*dolphin.costinc);
+				animalsvar = animalsvar + '🐬';
+				mess = 'You got a dolphin!'
+				document.getElementById('dolphincounter').style.display = 'inline';
 				}
-            }); 
-			document.getElementById('sealBuy').addEventListener('click', function() { 
+				else {
+				mess = 'Insufficient happy points :(';
+				}
+            });			document.getElementById('sealBuy').addEventListener('click', function() { 
 				if (happy >= seal.cost) {
-					seal.count=seal.count+1;
-					happy = happy-seal.cost;
-					seal.cost=Math.round(seal.cost*seal.costinc);
-					animalsvar = animalsvar + '🦭';
-					mess = 'You got a seal!';
-					document.getElementById('sealcounter').style.display = 'inline';
-				} else {
-					mess = 'Insufficient happy points :(';
+				seal.count=seal.count+1;
+				happy = happy-seal.cost;
+				seal.cost=Math.round(seal.cost*seal.costinc);
+				animalsvar = animalsvar + '🦭';
+				mess = 'You got a seal!'
+				document.getElementById('sealcounter').style.display = 'inline';
 				}
-            }); 
-			document.getElementById('basicBuy').addEventListener('click', function() { 
-				if (happy >= basic.cost) {
-					basic.count=basic.count+1;
-					happy = happy-basic.cost;
-					basic.cost=Math.round(basic.cost*basic.costinc);
-					animalsvar = animalsvar + '🐟';
-					mess = 'You got a betta fish!';
-					document.getElementById('basiccounter').style.display = 'inline';
-				} else {
-					mess = 'Insufficient happy points :(';
+				else {
+				mess = 'Insufficient happy points :(';
 				}
-            }); 
-			document.getElementById('tropicalBuy').addEventListener('click', function() { 
+            });			document.getElementById('bettaBuy').addEventListener('click', function() { 
+				if (happy >= betta.cost) {
+				betta.count=betta.count+1;
+				happy = happy-betta.cost;
+				betta.cost=Math.round(betta.cost*betta.costinc);
+				animalsvar = animalsvar + '🐟';
+				mess = 'You got a betta!'
+				document.getElementById('bettacounter').style.display = 'inline';
+				}
+				else {
+				mess = 'Insufficient happy points :(';
+				}
+            });			document.getElementById('tropicalBuy').addEventListener('click', function() { 
 				if (happy >= tropical.cost) {
-					tropical.count=tropical.count+1;
-					happy = happy-tropical.cost;
-					tropical.cost=Math.round(tropical.cost*tropical.costinc);
-					animalsvar = animalsvar + '🐠';
-					mess = 'You got a tropical fish!';
-					document.getElementById('tropicalcounter').style.display = 'inline';
-				} else {
-					mess = 'Insufficient happy points :(';
+				tropical.count=tropical.count+1;
+				happy = happy-tropical.cost;
+				tropical.cost=Math.round(tropical.cost*tropical.costinc);
+				animalsvar = animalsvar + '🐠';
+				mess = 'You got a tropical!'
+				document.getElementById('tropicalcounter').style.display = 'inline';
 				}
-            }); 
-			document.getElementById('pufferBuy').addEventListener('click', function() { 
-				if (happy >= puffer.cost) {
-					puffer.count=puffer.count+1;
-					happy = happy-puffer.cost;
-					puffer.cost=Math.round(puffer.cost*puffer.costinc);
-					animalsvar = animalsvar + '🐡';
-					mess = 'You got a pufferfish!';
-					document.getElementById('puffercounter').style.display = 'inline';
-				} else {
-					mess = 'Insufficient happy points :(';
+				else {
+				mess = 'Insufficient happy points :(';
 				}
-            }); 
-			document.getElementById('sharkBuy').addEventListener('click', function() { 
+            });			document.getElementById('pufferfishBuy').addEventListener('click', function() { 
+				if (happy >= pufferfish.cost) {
+				pufferfish.count=pufferfish.count+1;
+				happy = happy-pufferfish.cost;
+				pufferfish.cost=Math.round(pufferfish.cost*pufferfish.costinc);
+				animalsvar = animalsvar + '🐡';
+				mess = 'You got a pufferfish!'
+				document.getElementById('pufferfishcounter').style.display = 'inline';
+				}
+				else {
+				mess = 'Insufficient happy points :(';
+				}
+            });			document.getElementById('sharkBuy').addEventListener('click', function() { 
 				if (happy >= shark.cost) {
-					shark.count=shark.count+1;
-					happy = happy-shark.cost;
-					shark.cost=Math.round(shark.cost*shark.costinc);
-					animalsvar = animalsvar + '🦈';
-					mess = 'You got a shark!';
-					document.getElementById('sharkcounter').style.display = 'inline';
-				} else {
-					mess = 'Insufficient happy points :(';
+				shark.count=shark.count+1;
+				happy = happy-shark.cost;
+				shark.cost=Math.round(shark.cost*shark.costinc);
+				animalsvar = animalsvar + '🦈';
+				mess = 'You got a shark!'
+				document.getElementById('sharkcounter').style.display = 'inline';
 				}
-            }); 
-			document.getElementById('octopusBuy').addEventListener('click', function() { 
+				else {
+				mess = 'Insufficient happy points :(';
+				}
+            });			document.getElementById('octopusBuy').addEventListener('click', function() { 
 				if (happy >= octopus.cost) {
-					octopus.count=octopus.count+1;
-					happy = happy-octopus.cost;
-					octopus.cost=Math.round(octopus.cost*octopus.costinc);
-					animalsvar = animalsvar + '🐙';
-					mess = 'You got a octopus!';
-					document.getElementById('octopuscounter').style.display = 'inline';
-				} else {
-					mess = 'Insufficient happy points :(';
+				octopus.count=octopus.count+1;
+				happy = happy-octopus.cost;
+				octopus.cost=Math.round(octopus.cost*octopus.costinc);
+				animalsvar = animalsvar + '🐙';
+				mess = 'You got a octopus!'
+				document.getElementById('octopuscounter').style.display = 'inline';
 				}
-            }); 
-			document.getElementById('jellyfishBuy').addEventListener('click', function() { 
+				else {
+				mess = 'Insufficient happy points :(';
+				}
+            });			document.getElementById('jellyfishBuy').addEventListener('click', function() { 
 				if (happy >= jellyfish.cost) {
-					jellyfish.count=jellyfish.count+1;
-					happy = happy-jellyfish.cost;
-					jellyfish.cost=Math.round(jellyfish.cost*jellyfish.costinc);
-					animalsvar = animalsvar + '🪼';
-					mess = 'You got a jellyfish!';
-					document.getElementById('jellyfishcounter').style.display = 'inline';
-				} else {
-					mess = 'Insufficient happy points :(';
+				jellyfish.count=jellyfish.count+1;
+				happy = happy-jellyfish.cost;
+				jellyfish.cost=Math.round(jellyfish.cost*jellyfish.costinc);
+				animalsvar = animalsvar + '🪼';
+				mess = 'You got a jellyfish!'
+				document.getElementById('jellyfishcounter').style.display = 'inline';
 				}
-            }); 
-			document.getElementById('beeBuy').addEventListener('click', function() { 
+				else {
+				mess = 'Insufficient happy points :(';
+				}
+            });			document.getElementById('beeBuy').addEventListener('click', function() { 
 				if (happy >= bee.cost) {
-					bee.count=bee.count+1;
-					happy = happy-bee.cost;
-					if(Math.round(bee.cost*bee.costinc)>bee.cost) {
-						bee.cost=Math.round(bee.cost*bee.costinc);
-					} else {
-						bee.cost=bee.cost+1;
-					}
-					animalsvar = animalsvar + '🐝';
-					mess = 'You got a bee!';
-					document.getElementById('beecounter').style.display = 'inline';
-				} else {
-					mess = 'Insufficient happy points :(';
+				bee.count=bee.count+1;
+				happy = happy-bee.cost;
+				bee.cost=Math.round(bee.cost*bee.costinc);
+				animalsvar = animalsvar + '🐝';
+				mess = 'You got a bee!'
+				document.getElementById('beecounter').style.display = 'inline';
 				}
-            }); 
-			document.getElementById('shrimpBuy').addEventListener('click', function() { 
+				else {
+				mess = 'Insufficient happy points :(';
+				}
+            });			document.getElementById('shrimpBuy').addEventListener('click', function() { 
 				if (happy >= shrimp.cost) {
-					shrimp.count=shrimp.count+1;
-					happy = happy-shrimp.cost;
-					shrimp.cost=Math.round(shrimp.cost*shrimp.costinc);
-					animalsvar = animalsvar + '🦐';
-					mess = 'You got a shrimp!';
-					document.getElementById('shrimpcounter').style.display = 'inline';
-				} else {
-					mess = 'Insufficient happy points :(';
+				shrimp.count=shrimp.count+1;
+				happy = happy-shrimp.cost;
+				shrimp.cost=Math.round(shrimp.cost*shrimp.costinc);
+				animalsvar = animalsvar + '🦐';
+				mess = 'You got a shrimp!'
+				document.getElementById('shrimpcounter').style.display = 'inline';
 				}
-            }); 
-			document.getElementById('squidBuy').addEventListener('click', function() { 
-				if (happy >= squid.cost) {
-					squid.count=squid.count+1;
-					happy = happy-squid.cost;
-					squid.cost=Math.round(squid.cost*squid.costinc);
-					animalsvar = animalsvar + '🦑';
-					mess = 'You got a squid! Hey Squidward!';
-					document.getElementById('squidcounter').style.display = 'inline';
-				} else {
-					mess = 'Insufficient happy points :(';
+				else {
+				mess = 'Insufficient happy points :(';
 				}
-            }); 
-
-
+            });
 
 								//other buttons
-			document.getElementById("Sayzone").addEventListener("click", function() {
-				mess = "Say!";
+			document.getElementById('Sayzone').addEventListener('click', function() {
+				mess = 'Say!';
 			});
 			
-			document.getElementById("info").addEventListener("click", function() {
-				mess = "Saydee's Garden is a game made by Nichi for Saydee for her 23rd birthday. This is version 0.9, a pre-release. The object is to collect as many happy points as you can while growing your garden.";
+			document.getElementById('info').addEventListener('click', function() {
+				mess = 'Saydee\'s Garden is a game made by Nichi for Saydee for her 23rd birthday. This is version 1.0, made to be released on Sept. 9, 2024. The object is to collect as many happy points as you can while growing your garden.';
 			});
 				
 				//	SAVE AND LOAD FUNCTIONS 
             document.getElementById('save').addEventListener('click', function() {  
-				localStorage.setItem("mess",mess);
-				localStorage.setItem("smoochgardenvar",smoochgardenvar);
-				localStorage.setItem("flowersvar",flowersvar);
-				localStorage.setItem("stuffvar",stuffvar);
-				localStorage.setItem("animalsvar",animalsvar);
-				localStorage.setItem("loveinterval",loveinterval);
-				localStorage.setItem("praiseinterval",praiseinterval);
-				localStorage.setItem("loveticker",loveticker);
-				localStorage.setItem("praiseticker",praiseticker);
-				localStorage.setItem("smooch",smooch);
-				localStorage.setItem("smoochpower",smoochpower);
-				localStorage.setItem("happy",happy);
-				localStorage.setItem("daisy.count",daisy.count);
-				localStorage.setItem("daisy.cost",daisy.cost);
-				localStorage.setItem("daisy.costinc",daisy.costinc);
-				localStorage.setItem("daisy.power",daisy.power);
-				localStorage.setItem("tulip.count",tulip.count);
-				localStorage.setItem("tulip.cost",tulip.cost);
-				localStorage.setItem("tulip.costinc",tulip.costinc);
-				localStorage.setItem("tulip.power",tulip.power);
-				localStorage.setItem("rose.count",rose.count);
-				localStorage.setItem("rose.cost",rose.cost);
-				localStorage.setItem("rose.costinc",rose.costinc);
-				localStorage.setItem("rose.power",rose.power);
-				localStorage.setItem("sunflower.count",sunflower.count);
-				localStorage.setItem("sunflower.cost",sunflower.cost);
-				localStorage.setItem("sunflower.costinc",sunflower.costinc);
-				localStorage.setItem("sunflower.power",sunflower.power);
-				localStorage.setItem("cactus.count",cactus.count);
-				localStorage.setItem("cactus.cost",cactus.cost);
-				localStorage.setItem("cactus.costinc",cactus.costinc);
-				localStorage.setItem("cactus.power",cactus.power);
-				localStorage.setItem("lipstick.count",lipstick.count);
-				localStorage.setItem("lipstick.cost",lipstick.cost);
-				localStorage.setItem("lipstick.costinc",lipstick.costinc);
-				localStorage.setItem("lipstick.power",lipstick.power);
-				localStorage.setItem("parrot.count",parrot.count);
-				localStorage.setItem("parrot.cost",parrot.cost);
-				localStorage.setItem("parrot.costinc",parrot.costinc);
-				localStorage.setItem("parrot.power",parrot.power);
-				localStorage.setItem("duck.count",duck.count);
-				localStorage.setItem("duck.cost",duck.cost);
-				localStorage.setItem("duck.costinc",duck.costinc);
-				localStorage.setItem("duck.power",duck.power);
-				localStorage.setItem("starfish.count",starfish.count);
-				localStorage.setItem("starfish.cost",starfish.cost);
-				localStorage.setItem("starfish.costinc",starfish.costinc);
-				localStorage.setItem("starfish.power",starfish.power);
-				localStorage.setItem("turtle.count",turtle.count);
-				localStorage.setItem("turtle.cost",turtle.cost);
-				localStorage.setItem("turtle.costinc",turtle.costinc);
-				localStorage.setItem("turtle.power",turtle.power);
-				localStorage.setItem("bunny.count",bunny.count);
-				localStorage.setItem("bunny.cost",bunny.cost);
-				localStorage.setItem("bunny.costinc",bunny.costinc);
-				localStorage.setItem("bunny.power",bunny.power);
-				localStorage.setItem("bear.count",bear.count);
-				localStorage.setItem("bear.cost",bear.cost);
-				localStorage.setItem("bear.costinc",bear.costinc);
-				localStorage.setItem("bear.power",bear.power);
-				localStorage.setItem("dog.count",dog.count);
-				localStorage.setItem("dog.cost",dog.cost);
-				localStorage.setItem("dog.costinc",dog.costinc);
-				localStorage.setItem("dog.power",dog.power);
-				localStorage.setItem("cat.count",cat.count);
-				localStorage.setItem("cat.cost",cat.cost);
-				localStorage.setItem("cat.costinc",cat.costinc);
-				localStorage.setItem("cat.power",cat.power);
-				localStorage.setItem("wateringcan.count",wateringcan.count);
-				localStorage.setItem("wateringcan.cost",wateringcan.cost);
-				localStorage.setItem("wateringcan.costinc",wateringcan.costinc);
-				localStorage.setItem("wateringcan.power",wateringcan.power);
-				localStorage.setItem("birdfeeder.count",birdfeeder.count);
-				localStorage.setItem("birdfeeder.cost",birdfeeder.cost);
-				localStorage.setItem("birdfeeder.costinc",birdfeeder.costinc);
-				localStorage.setItem("birdfeeder.power",birdfeeder.power);
-				localStorage.setItem("blackcatcount",blackcatcount);
+				localStorage.setItem('mess',mess);
+				localStorage.setItem('smoochgardenvar',smoochgardenvar);
+				localStorage.setItem('flowersvar',flowersvar);
+				localStorage.setItem('stuffvar',stuffvar);
+				localStorage.setItem('animalsvar',animalsvar);
+				localStorage.setItem('loveinterval',loveinterval);
+				localStorage.setItem('praiseinterval',praiseinterval);
+				localStorage.setItem('loveticker',loveticker);
+				localStorage.setItem('praiseticker',praiseticker);
+				localStorage.setItem('smooch',smooch);
+				localStorage.setItem('smoochpower',smoochpower);
+				localStorage.setItem('happy',happy);
+	
+localStorage.setItem('daisy.count',daisy.count);
+				localStorage.setItem('daisy.cost',daisy.cost);
+				localStorage.setItem('daisy.costinc',daisy.costinc);
+				localStorage.setItem('daisy.power',daisy.power);
+				localStorage.setItem('tulip.count',tulip.count);
+				localStorage.setItem('tulip.cost',tulip.cost);
+				localStorage.setItem('tulip.costinc',tulip.costinc);
+				localStorage.setItem('tulip.power',tulip.power);
+				localStorage.setItem('rose.count',rose.count);
+				localStorage.setItem('rose.cost',rose.cost);
+				localStorage.setItem('rose.costinc',rose.costinc);
+				localStorage.setItem('rose.power',rose.power);
+				localStorage.setItem('sunflower.count',sunflower.count);
+				localStorage.setItem('sunflower.cost',sunflower.cost);
+				localStorage.setItem('sunflower.costinc',sunflower.costinc);
+				localStorage.setItem('sunflower.power',sunflower.power);
+				localStorage.setItem('cactus.count',cactus.count);
+				localStorage.setItem('cactus.cost',cactus.cost);
+				localStorage.setItem('cactus.costinc',cactus.costinc);
+				localStorage.setItem('cactus.power',cactus.power);
+				localStorage.setItem('parrot.count',parrot.count);
+				localStorage.setItem('parrot.cost',parrot.cost);
+				localStorage.setItem('parrot.costinc',parrot.costinc);
+				localStorage.setItem('parrot.power',parrot.power);
+				localStorage.setItem('duck.count',duck.count);
+				localStorage.setItem('duck.cost',duck.cost);
+				localStorage.setItem('duck.costinc',duck.costinc);
+				localStorage.setItem('duck.power',duck.power);
+				localStorage.setItem('cat.count',cat.count);
+				localStorage.setItem('cat.cost',cat.cost);
+				localStorage.setItem('cat.costinc',cat.costinc);
+				localStorage.setItem('cat.power',cat.power);
+				localStorage.setItem('dog.count',dog.count);
+				localStorage.setItem('dog.cost',dog.cost);
+				localStorage.setItem('dog.costinc',dog.costinc);
+				localStorage.setItem('dog.power',dog.power);
+				localStorage.setItem('bear.count',bear.count);
+				localStorage.setItem('bear.cost',bear.cost);
+				localStorage.setItem('bear.costinc',bear.costinc);
+				localStorage.setItem('bear.power',bear.power);
+				localStorage.setItem('turtle.count',turtle.count);
+				localStorage.setItem('turtle.cost',turtle.cost);
+				localStorage.setItem('turtle.costinc',turtle.costinc);
+				localStorage.setItem('turtle.power',turtle.power);
+				localStorage.setItem('bunny.count',bunny.count);
+				localStorage.setItem('bunny.cost',bunny.cost);
+				localStorage.setItem('bunny.costinc',bunny.costinc);
+				localStorage.setItem('bunny.power',bunny.power);
+				localStorage.setItem('starfish.count',starfish.count);
+				localStorage.setItem('starfish.cost',starfish.cost);
+				localStorage.setItem('starfish.costinc',starfish.costinc);
+				localStorage.setItem('starfish.power',starfish.power);
+				localStorage.setItem('wateringcan.count',wateringcan.count);
+				localStorage.setItem('wateringcan.cost',wateringcan.cost);
+				localStorage.setItem('wateringcan.costinc',wateringcan.costinc);
+				localStorage.setItem('wateringcan.power',wateringcan.power);
+				localStorage.setItem('birdfeeder.count',birdfeeder.count);
+				localStorage.setItem('birdfeeder.cost',birdfeeder.cost);
+				localStorage.setItem('birdfeeder.costinc',birdfeeder.costinc);
+				localStorage.setItem('birdfeeder.power',birdfeeder.power);
+				localStorage.setItem('lipstick.count',lipstick.count);
+				localStorage.setItem('lipstick.cost',lipstick.cost);
+				localStorage.setItem('lipstick.costinc',lipstick.costinc);
+				localStorage.setItem('lipstick.power',lipstick.power);
 				localStorage.setItem('monkey.count',monkey.count);
 				localStorage.setItem('monkey.cost',monkey.cost);
 				localStorage.setItem('monkey.costinc',monkey.costinc);
@@ -2171,18 +2132,18 @@
 				localStorage.setItem('seal.cost',seal.cost);
 				localStorage.setItem('seal.costinc',seal.costinc);
 				localStorage.setItem('seal.power',seal.power);
-				localStorage.setItem('basic.count',basic.count);
-				localStorage.setItem('basic.cost',basic.cost);
-				localStorage.setItem('basic.costinc',basic.costinc);
-				localStorage.setItem('basic.power',basic.power);
+				localStorage.setItem('betta.count',betta.count);
+				localStorage.setItem('betta.cost',betta.cost);
+				localStorage.setItem('betta.costinc',betta.costinc);
+				localStorage.setItem('betta.power',betta.power);
 				localStorage.setItem('tropical.count',tropical.count);
 				localStorage.setItem('tropical.cost',tropical.cost);
 				localStorage.setItem('tropical.costinc',tropical.costinc);
 				localStorage.setItem('tropical.power',tropical.power);
-				localStorage.setItem('puffer.count',puffer.count);
-				localStorage.setItem('puffer.cost',puffer.cost);
-				localStorage.setItem('puffer.costinc',puffer.costinc);
-				localStorage.setItem('puffer.power',puffer.power);
+				localStorage.setItem('pufferfish.count',pufferfish.count);
+				localStorage.setItem('pufferfish.cost',pufferfish.cost);
+				localStorage.setItem('pufferfish.costinc',pufferfish.costinc);
+				localStorage.setItem('pufferfish.power',pufferfish.power);
 				localStorage.setItem('shark.count',shark.count);
 				localStorage.setItem('shark.cost',shark.cost);
 				localStorage.setItem('shark.costinc',shark.costinc);
@@ -2203,291 +2164,339 @@
 				localStorage.setItem('shrimp.cost',shrimp.cost);
 				localStorage.setItem('shrimp.costinc',shrimp.costinc);
 				localStorage.setItem('shrimp.power',shrimp.power);
-				localStorage.setItem('squid.count',squid.count);
-				localStorage.setItem('squid.cost',squid.cost);
-				localStorage.setItem('squid.costinc',squid.costinc);
-				localStorage.setItem('squid.power',squid.power);
-				
-				mess = "Gave saved!"
+	
+			
+				mess = 'Gave saved!'
 			});
 				
 				//			 LOAD 
             document.getElementById('load').addEventListener('click', function() {
-				mess = localStorage.getItem("mess");
-				smoochgardenvar = localStorage.getItem("smoochgardenvar");
-				flowersvar = localStorage.getItem("flowersvar");
-				stuffvar = localStorage.getItem("stuffvar");
-				animalsvar = localStorage.getItem("animalsvar");
-				loveinterval = localStorage.getItem("loveinterval");
-				praiseinterval = localStorage.getItem("praiseinterval");
-				loveticker = localStorage.getItem("loveticker");
-				praiseticker = localStorage.getItem("praiseticker");
-				smooch = Number(localStorage.getItem("smooch"));
-				smoochpower = Number(localStorage.getItem("smoochpower"));
-				happy = Number(localStorage.getItem("happy"));
-				daisy.count = Number(localStorage.getItem("daisy.count"));
-				daisy.cost = Number(localStorage.getItem("daisy.cost"));
-				daisy.costinc = Number(localStorage.getItem("daisy.costinc"));
-				daisy.power = Number(localStorage.getItem("daisy.power"));
-				tulip.count = Number(localStorage.getItem("tulip.count"));
-				tulip.cost = Number(localStorage.getItem("tulip.cost"));
-				tulip.costinc = Number(localStorage.getItem("tulip.costinc"));
-				tulip.power = Number(localStorage.getItem("tulip.power"));
-				rose.count = Number(localStorage.getItem("rose.count"));
-				rose.cost = Number(localStorage.getItem("rose.cost"));
-				rose.costinc = Number(localStorage.getItem("rose.costinc"));
-				rose.power = Number(localStorage.getItem("rose.power"));
-				sunflower.count = Number(localStorage.getItem("sunflower.count"));
-				sunflower.cost = Number(localStorage.getItem("sunflower.cost"));
-				sunflower.costinc = Number(localStorage.getItem("sunflower.costinc"));
-				sunflower.power = Number(localStorage.getItem("sunflower.power"));
-				cactus.count = Number(localStorage.getItem("cactus.count"));
-				cactus.cost = Number(localStorage.getItem("cactus.cost"));
-				cactus.costinc = Number(localStorage.getItem("cactus.costinc"));
-				cactus.power = Number(localStorage.getItem("cactus.power"));
-				lipstick.count = Number(localStorage.getItem("lipstick.count"));
-				lipstick.cost = Number(localStorage.getItem("lipstick.cost"));
-				lipstick.costinc = Number(localStorage.getItem("lipstick.costinc"));
-				lipstick.power = Number(localStorage.getItem("lipstick.power"));
-				parrot.count = Number(localStorage.getItem("parrot.count"));
-				parrot.cost = Number(localStorage.getItem("parrot.cost"));
-				parrot.costinc = Number(localStorage.getItem("parrot.costinc"));
-				parrot.power = Number(localStorage.getItem("parrot.power"));
-				duck.count = Number(localStorage.getItem("duck.count"));
-				duck.cost = Number(localStorage.getItem("duck.cost"));
-				duck.costinc = Number(localStorage.getItem("duck.costinc"));
-				duck.power = Number(localStorage.getItem("duck.power"));
-				starfish.count = Number(localStorage.getItem("starfish.count"));
-				starfish.cost = Number(localStorage.getItem("starfish.cost"));
-				starfish.costinc = Number(localStorage.getItem("starfish.costinc"));
-				starfish.power = Number(localStorage.getItem("starfish.power"));
-				turtle.count = Number(localStorage.getItem("turtle.count"));
-				turtle.cost = Number(localStorage.getItem("turtle.cost"));
-				turtle.costinc = Number(localStorage.getItem("turtle.costinc"));
-				turtle.power = Number(localStorage.getItem("turtle.power"));
-				bunny.count = Number(localStorage.getItem("bunny.count"));
-				bunny.cost = Number(localStorage.getItem("bunny.cost"));
-				bunny.costinc = Number(localStorage.getItem("bunny.costinc"));
-				bunny.power = Number(localStorage.getItem("bunny.power"));
-				bear.count = Number(localStorage.getItem("bear.count"));
-				bear.cost = Number(localStorage.getItem("bear.cost"));
-				bear.costinc = Number(localStorage.getItem("bear.costinc"));
-				bear.power = Number(localStorage.getItem("bear.power"));
-				dog.count = Number(localStorage.getItem("dog.count"));
-				dog.cost = Number(localStorage.getItem("dog.cost"));
-				dog.costinc = Number(localStorage.getItem("dog.costinc"));
-				dog.power = Number(localStorage.getItem("dog.power"));
-				cat.count = Number(localStorage.getItem("cat.count"));
-				cat.cost = Number(localStorage.getItem("cat.cost"));
-				cat.costinc = Number(localStorage.getItem("cat.costinc"));
-				cat.power = Number(localStorage.getItem("cat.power"));
-				wateringcan.count = Number(localStorage.getItem("wateringcan.count"));
-				wateringcan.cost = Number(localStorage.getItem("wateringcan.cost"));
-				wateringcan.costinc = Number(localStorage.getItem("wateringcan.costinc"));
-				wateringcan.power = Number(localStorage.getItem("wateringcan.power"));
-				birdfeeder.count = Number(localStorage.getItem("birdfeeder.count"));
-				birdfeeder.cost = Number(localStorage.getItem("birdfeeder.cost"));
-				birdfeeder.costinc = Number(localStorage.getItem("birdfeeder.costinc"));
-				birdfeeder.power = Number(localStorage.getItem("birdfeeder.power"));
-				blackcatcount = localStorage.getItem("blackcatcount");
-				monkey.count = Number(localStorage.getItem('monkey.count'));
+				mess = localStorage.getItem('mess');
+				smoochgardenvar = localStorage.getItem('smoochgardenvar');
+				flowersvar = localStorage.getItem('flowersvar');
+				stuffvar = localStorage.getItem('stuffvar');
+				animalsvar = localStorage.getItem('animalsvar');
+				loveinterval = localStorage.getItem('loveinterval');
+				praiseinterval = localStorage.getItem('praiseinterval');
+				loveticker = localStorage.getItem('loveticker');
+				praiseticker = localStorage.getItem('praiseticker');
+				smooch = Number(localStorage.getItem('smooch'));
+				smoochpower = Number(localStorage.getItem('smoochpower'));
+				happy = Number(localStorage.getItem('happy'));
+	
+daisy.count = Number(localStorage.getItem('daisy.count'));
+				daisy.cost = Number(localStorage.getItem('daisy.cost'));
+				daisy.costinc = Number(localStorage.getItem('daisy.costinc'));
+				daisy.power = Number(localStorage.getItem('daisy.power'));
+				tulip.count = Number(localStorage.getItem('tulip.count'));
+				tulip.cost = Number(localStorage.getItem('tulip.cost'));
+				tulip.costinc = Number(localStorage.getItem('tulip.costinc'));
+				tulip.power = Number(localStorage.getItem('tulip.power'));rose.count = Number(localStorage.getItem('rose.count'));
+				rose.cost = Number(localStorage.getItem('rose.cost'));
+				rose.costinc = Number(localStorage.getItem('rose.costinc'));
+				rose.power = Number(localStorage.getItem('rose.power'));sunflower.count = Number(localStorage.getItem('sunflower.count'));
+				sunflower.cost = Number(localStorage.getItem('sunflower.cost'));
+				sunflower.costinc = Number(localStorage.getItem('sunflower.costinc'));
+				sunflower.power = Number(localStorage.getItem('sunflower.power'));cactus.count = Number(localStorage.getItem('cactus.count'));
+				cactus.cost = Number(localStorage.getItem('cactus.cost'));
+				cactus.costinc = Number(localStorage.getItem('cactus.costinc'));
+				cactus.power = Number(localStorage.getItem('cactus.power'));parrot.count = Number(localStorage.getItem('parrot.count'));
+				parrot.cost = Number(localStorage.getItem('parrot.cost'));
+				parrot.costinc = Number(localStorage.getItem('parrot.costinc'));
+				parrot.power = Number(localStorage.getItem('parrot.power'));duck.count = Number(localStorage.getItem('duck.count'));
+				duck.cost = Number(localStorage.getItem('duck.cost'));
+				duck.costinc = Number(localStorage.getItem('duck.costinc'));
+				duck.power = Number(localStorage.getItem('duck.power'));cat.count = Number(localStorage.getItem('cat.count'));
+				cat.cost = Number(localStorage.getItem('cat.cost'));
+				cat.costinc = Number(localStorage.getItem('cat.costinc'));
+				cat.power = Number(localStorage.getItem('cat.power'));dog.count = Number(localStorage.getItem('dog.count'));
+				dog.cost = Number(localStorage.getItem('dog.cost'));
+				dog.costinc = Number(localStorage.getItem('dog.costinc'));
+				dog.power = Number(localStorage.getItem('dog.power'));bear.count = Number(localStorage.getItem('bear.count'));
+				bear.cost = Number(localStorage.getItem('bear.cost'));
+				bear.costinc = Number(localStorage.getItem('bear.costinc'));
+				bear.power = Number(localStorage.getItem('bear.power'));turtle.count = Number(localStorage.getItem('turtle.count'));
+				turtle.cost = Number(localStorage.getItem('turtle.cost'));
+				turtle.costinc = Number(localStorage.getItem('turtle.costinc'));
+				turtle.power = Number(localStorage.getItem('turtle.power'));bunny.count = Number(localStorage.getItem('bunny.count'));
+				bunny.cost = Number(localStorage.getItem('bunny.cost'));
+				bunny.costinc = Number(localStorage.getItem('bunny.costinc'));
+				bunny.power = Number(localStorage.getItem('bunny.power'));starfish.count = Number(localStorage.getItem('starfish.count'));
+				starfish.cost = Number(localStorage.getItem('starfish.cost'));
+				starfish.costinc = Number(localStorage.getItem('starfish.costinc'));
+				starfish.power = Number(localStorage.getItem('starfish.power'));wateringcan.count = Number(localStorage.getItem('wateringcan.count'));
+				wateringcan.cost = Number(localStorage.getItem('wateringcan.cost'));
+				wateringcan.costinc = Number(localStorage.getItem('wateringcan.costinc'));
+				wateringcan.power = Number(localStorage.getItem('wateringcan.power'));birdfeeder.count = Number(localStorage.getItem('birdfeeder.count'));
+				birdfeeder.cost = Number(localStorage.getItem('birdfeeder.cost'));
+				birdfeeder.costinc = Number(localStorage.getItem('birdfeeder.costinc'));
+				birdfeeder.power = Number(localStorage.getItem('birdfeeder.power'));lipstick.count = Number(localStorage.getItem('lipstick.count'));
+				lipstick.cost = Number(localStorage.getItem('lipstick.cost'));
+				lipstick.costinc = Number(localStorage.getItem('lipstick.costinc'));
+				lipstick.power = Number(localStorage.getItem('lipstick.power'));monkey.count = Number(localStorage.getItem('monkey.count'));
 				monkey.cost = Number(localStorage.getItem('monkey.cost'));
 				monkey.costinc = Number(localStorage.getItem('monkey.costinc'));
-				monkey.power = Number(localStorage.getItem('monkey.power'));
-				tiger.count = Number(localStorage.getItem('tiger.count'));
+				monkey.power = Number(localStorage.getItem('monkey.power'));tiger.count = Number(localStorage.getItem('tiger.count'));
 				tiger.cost = Number(localStorage.getItem('tiger.cost'));
 				tiger.costinc = Number(localStorage.getItem('tiger.costinc'));
-				tiger.power = Number(localStorage.getItem('tiger.power'));
-				jackass.count = Number(localStorage.getItem('jackass.count'));
+				tiger.power = Number(localStorage.getItem('tiger.power'));jackass.count = Number(localStorage.getItem('jackass.count'));
 				jackass.cost = Number(localStorage.getItem('jackass.cost'));
 				jackass.costinc = Number(localStorage.getItem('jackass.costinc'));
-				jackass.power = Number(localStorage.getItem('jackass.power'));
-				horse.count = Number(localStorage.getItem('horse.count'));
+				jackass.power = Number(localStorage.getItem('jackass.power'));horse.count = Number(localStorage.getItem('horse.count'));
 				horse.cost = Number(localStorage.getItem('horse.cost'));
 				horse.costinc = Number(localStorage.getItem('horse.costinc'));
-				horse.power = Number(localStorage.getItem('horse.power'));
-				zebra.count = Number(localStorage.getItem('zebra.count'));
+				horse.power = Number(localStorage.getItem('horse.power'));zebra.count = Number(localStorage.getItem('zebra.count'));
 				zebra.cost = Number(localStorage.getItem('zebra.cost'));
 				zebra.costinc = Number(localStorage.getItem('zebra.costinc'));
-				zebra.power = Number(localStorage.getItem('zebra.power'));
-				deer.count = Number(localStorage.getItem('deer.count'));
+				zebra.power = Number(localStorage.getItem('zebra.power'));deer.count = Number(localStorage.getItem('deer.count'));
 				deer.cost = Number(localStorage.getItem('deer.cost'));
 				deer.costinc = Number(localStorage.getItem('deer.costinc'));
-				deer.power = Number(localStorage.getItem('deer.power'));
-				cow.count = Number(localStorage.getItem('cow.count'));
+				deer.power = Number(localStorage.getItem('deer.power'));cow.count = Number(localStorage.getItem('cow.count'));
 				cow.cost = Number(localStorage.getItem('cow.cost'));
 				cow.costinc = Number(localStorage.getItem('cow.costinc'));
-				cow.power = Number(localStorage.getItem('cow.power'));
-				pig.count = Number(localStorage.getItem('pig.count'));
+				cow.power = Number(localStorage.getItem('cow.power'));pig.count = Number(localStorage.getItem('pig.count'));
 				pig.cost = Number(localStorage.getItem('pig.cost'));
 				pig.costinc = Number(localStorage.getItem('pig.costinc'));
-				pig.power = Number(localStorage.getItem('pig.power'));
-				sheep.count = Number(localStorage.getItem('sheep.count'));
+				pig.power = Number(localStorage.getItem('pig.power'));sheep.count = Number(localStorage.getItem('sheep.count'));
 				sheep.cost = Number(localStorage.getItem('sheep.cost'));
 				sheep.costinc = Number(localStorage.getItem('sheep.costinc'));
-				sheep.power = Number(localStorage.getItem('sheep.power'));
-				camel.count = Number(localStorage.getItem('camel.count'));
+				sheep.power = Number(localStorage.getItem('sheep.power'));camel.count = Number(localStorage.getItem('camel.count'));
 				camel.cost = Number(localStorage.getItem('camel.cost'));
 				camel.costinc = Number(localStorage.getItem('camel.costinc'));
-				camel.power = Number(localStorage.getItem('camel.power'));
-				giraffe.count = Number(localStorage.getItem('giraffe.count'));
+				camel.power = Number(localStorage.getItem('camel.power'));giraffe.count = Number(localStorage.getItem('giraffe.count'));
 				giraffe.cost = Number(localStorage.getItem('giraffe.cost'));
 				giraffe.costinc = Number(localStorage.getItem('giraffe.costinc'));
-				giraffe.power = Number(localStorage.getItem('giraffe.power'));
-				elephant.count = Number(localStorage.getItem('elephant.count'));
+				giraffe.power = Number(localStorage.getItem('giraffe.power'));elephant.count = Number(localStorage.getItem('elephant.count'));
 				elephant.cost = Number(localStorage.getItem('elephant.cost'));
 				elephant.costinc = Number(localStorage.getItem('elephant.costinc'));
-				elephant.power = Number(localStorage.getItem('elephant.power'));
-				hedgehog.count = Number(localStorage.getItem('hedgehog.count'));
+				elephant.power = Number(localStorage.getItem('elephant.power'));hedgehog.count = Number(localStorage.getItem('hedgehog.count'));
 				hedgehog.cost = Number(localStorage.getItem('hedgehog.cost'));
 				hedgehog.costinc = Number(localStorage.getItem('hedgehog.costinc'));
-				hedgehog.power = Number(localStorage.getItem('hedgehog.power'));
-				bat.count = Number(localStorage.getItem('bat.count'));
+				hedgehog.power = Number(localStorage.getItem('hedgehog.power'));bat.count = Number(localStorage.getItem('bat.count'));
 				bat.cost = Number(localStorage.getItem('bat.cost'));
 				bat.costinc = Number(localStorage.getItem('bat.costinc'));
-				bat.power = Number(localStorage.getItem('bat.power'));
-				sloth.count = Number(localStorage.getItem('sloth.count'));
+				bat.power = Number(localStorage.getItem('bat.power'));sloth.count = Number(localStorage.getItem('sloth.count'));
 				sloth.cost = Number(localStorage.getItem('sloth.cost'));
 				sloth.costinc = Number(localStorage.getItem('sloth.costinc'));
-				sloth.power = Number(localStorage.getItem('sloth.power'));
-				otter.count = Number(localStorage.getItem('otter.count'));
+				sloth.power = Number(localStorage.getItem('sloth.power'));otter.count = Number(localStorage.getItem('otter.count'));
 				otter.cost = Number(localStorage.getItem('otter.cost'));
 				otter.costinc = Number(localStorage.getItem('otter.costinc'));
-				otter.power = Number(localStorage.getItem('otter.power'));
-				kangaroo.count = Number(localStorage.getItem('kangaroo.count'));
+				otter.power = Number(localStorage.getItem('otter.power'));kangaroo.count = Number(localStorage.getItem('kangaroo.count'));
 				kangaroo.cost = Number(localStorage.getItem('kangaroo.cost'));
 				kangaroo.costinc = Number(localStorage.getItem('kangaroo.costinc'));
-				kangaroo.power = Number(localStorage.getItem('kangaroo.power'));
-				hatchling.count = Number(localStorage.getItem('hatchling.count'));
+				kangaroo.power = Number(localStorage.getItem('kangaroo.power'));hatchling.count = Number(localStorage.getItem('hatchling.count'));
 				hatchling.cost = Number(localStorage.getItem('hatchling.cost'));
 				hatchling.costinc = Number(localStorage.getItem('hatchling.costinc'));
-				hatchling.power = Number(localStorage.getItem('hatchling.power'));
-				baby.count = Number(localStorage.getItem('baby.count'));
+				hatchling.power = Number(localStorage.getItem('hatchling.power'));baby.count = Number(localStorage.getItem('baby.count'));
 				baby.cost = Number(localStorage.getItem('baby.cost'));
 				baby.costinc = Number(localStorage.getItem('baby.costinc'));
-				baby.power = Number(localStorage.getItem('baby.power'));
-				songbird.count = Number(localStorage.getItem('songbird.count'));
+				baby.power = Number(localStorage.getItem('baby.power'));songbird.count = Number(localStorage.getItem('songbird.count'));
 				songbird.cost = Number(localStorage.getItem('songbird.cost'));
 				songbird.costinc = Number(localStorage.getItem('songbird.costinc'));
-				songbird.power = Number(localStorage.getItem('songbird.power'));
-				penguin.count = Number(localStorage.getItem('penguin.count'));
+				songbird.power = Number(localStorage.getItem('songbird.power'));penguin.count = Number(localStorage.getItem('penguin.count'));
 				penguin.cost = Number(localStorage.getItem('penguin.cost'));
 				penguin.costinc = Number(localStorage.getItem('penguin.costinc'));
-				penguin.power = Number(localStorage.getItem('penguin.power'));
-				dove.count = Number(localStorage.getItem('dove.count'));
+				penguin.power = Number(localStorage.getItem('penguin.power'));dove.count = Number(localStorage.getItem('dove.count'));
 				dove.cost = Number(localStorage.getItem('dove.cost'));
 				dove.costinc = Number(localStorage.getItem('dove.costinc'));
-				dove.power = Number(localStorage.getItem('dove.power'));
-				swan.count = Number(localStorage.getItem('swan.count'));
+				dove.power = Number(localStorage.getItem('dove.power'));swan.count = Number(localStorage.getItem('swan.count'));
 				swan.cost = Number(localStorage.getItem('swan.cost'));
 				swan.costinc = Number(localStorage.getItem('swan.costinc'));
-				swan.power = Number(localStorage.getItem('swan.power'));
-				owl.count = Number(localStorage.getItem('owl.count'));
+				swan.power = Number(localStorage.getItem('swan.power'));owl.count = Number(localStorage.getItem('owl.count'));
 				owl.cost = Number(localStorage.getItem('owl.cost'));
 				owl.costinc = Number(localStorage.getItem('owl.costinc'));
-				owl.power = Number(localStorage.getItem('owl.power'));
-				dodo.count = Number(localStorage.getItem('dodo.count'));
+				owl.power = Number(localStorage.getItem('owl.power'));dodo.count = Number(localStorage.getItem('dodo.count'));
 				dodo.cost = Number(localStorage.getItem('dodo.cost'));
 				dodo.costinc = Number(localStorage.getItem('dodo.costinc'));
-				dodo.power = Number(localStorage.getItem('dodo.power'));
-				flamingo.count = Number(localStorage.getItem('flamingo.count'));
+				dodo.power = Number(localStorage.getItem('dodo.power'));flamingo.count = Number(localStorage.getItem('flamingo.count'));
 				flamingo.cost = Number(localStorage.getItem('flamingo.cost'));
 				flamingo.costinc = Number(localStorage.getItem('flamingo.costinc'));
-				flamingo.power = Number(localStorage.getItem('flamingo.power'));
-				peacock.count = Number(localStorage.getItem('peacock.count'));
+				flamingo.power = Number(localStorage.getItem('flamingo.power'));peacock.count = Number(localStorage.getItem('peacock.count'));
 				peacock.cost = Number(localStorage.getItem('peacock.cost'));
 				peacock.costinc = Number(localStorage.getItem('peacock.costinc'));
-				peacock.power = Number(localStorage.getItem('peacock.power'));
-				blackbird.count = Number(localStorage.getItem('blackbird.count'));
+				peacock.power = Number(localStorage.getItem('peacock.power'));blackbird.count = Number(localStorage.getItem('blackbird.count'));
 				blackbird.cost = Number(localStorage.getItem('blackbird.cost'));
 				blackbird.costinc = Number(localStorage.getItem('blackbird.costinc'));
-				blackbird.power = Number(localStorage.getItem('blackbird.power'));
-				chicken.count = Number(localStorage.getItem('chicken.count'));
+				blackbird.power = Number(localStorage.getItem('blackbird.power'));chicken.count = Number(localStorage.getItem('chicken.count'));
 				chicken.cost = Number(localStorage.getItem('chicken.cost'));
 				chicken.costinc = Number(localStorage.getItem('chicken.costinc'));
-				chicken.power = Number(localStorage.getItem('chicken.power'));
-				goose.count = Number(localStorage.getItem('goose.count'));
+				chicken.power = Number(localStorage.getItem('chicken.power'));goose.count = Number(localStorage.getItem('goose.count'));
 				goose.cost = Number(localStorage.getItem('goose.cost'));
 				goose.costinc = Number(localStorage.getItem('goose.costinc'));
-				goose.power = Number(localStorage.getItem('goose.power'));
-				phoenix.count = Number(localStorage.getItem('phoenix.count'));
+				goose.power = Number(localStorage.getItem('goose.power'));phoenix.count = Number(localStorage.getItem('phoenix.count'));
 				phoenix.cost = Number(localStorage.getItem('phoenix.cost'));
 				phoenix.costinc = Number(localStorage.getItem('phoenix.costinc'));
-				phoenix.power = Number(localStorage.getItem('phoenix.power'));
-				lizard.count = Number(localStorage.getItem('lizard.count'));
+				phoenix.power = Number(localStorage.getItem('phoenix.power'));lizard.count = Number(localStorage.getItem('lizard.count'));
 				lizard.cost = Number(localStorage.getItem('lizard.cost'));
 				lizard.costinc = Number(localStorage.getItem('lizard.costinc'));
-				lizard.power = Number(localStorage.getItem('lizard.power'));
-				dragon.count = Number(localStorage.getItem('dragon.count'));
+				lizard.power = Number(localStorage.getItem('lizard.power'));dragon.count = Number(localStorage.getItem('dragon.count'));
 				dragon.cost = Number(localStorage.getItem('dragon.cost'));
 				dragon.costinc = Number(localStorage.getItem('dragon.costinc'));
-				dragon.power = Number(localStorage.getItem('dragon.power'));
-				whale.count = Number(localStorage.getItem('whale.count'));
+				dragon.power = Number(localStorage.getItem('dragon.power'));whale.count = Number(localStorage.getItem('whale.count'));
 				whale.cost = Number(localStorage.getItem('whale.cost'));
 				whale.costinc = Number(localStorage.getItem('whale.costinc'));
-				whale.power = Number(localStorage.getItem('whale.power'));
-				dolphin.count = Number(localStorage.getItem('dolphin.count'));
+				whale.power = Number(localStorage.getItem('whale.power'));dolphin.count = Number(localStorage.getItem('dolphin.count'));
 				dolphin.cost = Number(localStorage.getItem('dolphin.cost'));
 				dolphin.costinc = Number(localStorage.getItem('dolphin.costinc'));
-				dolphin.power = Number(localStorage.getItem('dolphin.power'));
-				seal.count = Number(localStorage.getItem('seal.count'));
+				dolphin.power = Number(localStorage.getItem('dolphin.power'));seal.count = Number(localStorage.getItem('seal.count'));
 				seal.cost = Number(localStorage.getItem('seal.cost'));
 				seal.costinc = Number(localStorage.getItem('seal.costinc'));
-				seal.power = Number(localStorage.getItem('seal.power'));
-				basic.count = Number(localStorage.getItem('basic.count'));
-				basic.cost = Number(localStorage.getItem('basic.cost'));
-				basic.costinc = Number(localStorage.getItem('basic.costinc'));
-				basic.power = Number(localStorage.getItem('basic.power'));
-				tropical.count = Number(localStorage.getItem('tropical.count'));
+				seal.power = Number(localStorage.getItem('seal.power'));betta.count = Number(localStorage.getItem('betta.count'));
+				betta.cost = Number(localStorage.getItem('betta.cost'));
+				betta.costinc = Number(localStorage.getItem('betta.costinc'));
+				betta.power = Number(localStorage.getItem('betta.power'));tropical.count = Number(localStorage.getItem('tropical.count'));
 				tropical.cost = Number(localStorage.getItem('tropical.cost'));
 				tropical.costinc = Number(localStorage.getItem('tropical.costinc'));
-				tropical.power = Number(localStorage.getItem('tropical.power'));
-				puffer.count = Number(localStorage.getItem('puffer.count'));
-				puffer.cost = Number(localStorage.getItem('puffer.cost'));
-				puffer.costinc = Number(localStorage.getItem('puffer.costinc'));
-				puffer.power = Number(localStorage.getItem('puffer.power'));
-				shark.count = Number(localStorage.getItem('shark.count'));
+				tropical.power = Number(localStorage.getItem('tropical.power'));pufferfish.count = Number(localStorage.getItem('pufferfish.count'));
+				pufferfish.cost = Number(localStorage.getItem('pufferfish.cost'));
+				pufferfish.costinc = Number(localStorage.getItem('pufferfish.costinc'));
+				pufferfish.power = Number(localStorage.getItem('pufferfish.power'));shark.count = Number(localStorage.getItem('shark.count'));
 				shark.cost = Number(localStorage.getItem('shark.cost'));
 				shark.costinc = Number(localStorage.getItem('shark.costinc'));
-				shark.power = Number(localStorage.getItem('shark.power'));
-				octopus.count = Number(localStorage.getItem('octopus.count'));
+				shark.power = Number(localStorage.getItem('shark.power'));octopus.count = Number(localStorage.getItem('octopus.count'));
 				octopus.cost = Number(localStorage.getItem('octopus.cost'));
 				octopus.costinc = Number(localStorage.getItem('octopus.costinc'));
-				octopus.power = Number(localStorage.getItem('octopus.power'));
-				jellyfish.count = Number(localStorage.getItem('jellyfish.count'));
+				octopus.power = Number(localStorage.getItem('octopus.power'));jellyfish.count = Number(localStorage.getItem('jellyfish.count'));
 				jellyfish.cost = Number(localStorage.getItem('jellyfish.cost'));
 				jellyfish.costinc = Number(localStorage.getItem('jellyfish.costinc'));
-				jellyfish.power = Number(localStorage.getItem('jellyfish.power'));
-				bee.count = Number(localStorage.getItem('bee.count'));
+				jellyfish.power = Number(localStorage.getItem('jellyfish.power'));bee.count = Number(localStorage.getItem('bee.count'));
 				bee.cost = Number(localStorage.getItem('bee.cost'));
 				bee.costinc = Number(localStorage.getItem('bee.costinc'));
-				bee.power = Number(localStorage.getItem('bee.power'));
-				shrimp.count = Number(localStorage.getItem('shrimp.count'));
+				bee.power = Number(localStorage.getItem('bee.power'));shrimp.count = Number(localStorage.getItem('shrimp.count'));
 				shrimp.cost = Number(localStorage.getItem('shrimp.cost'));
 				shrimp.costinc = Number(localStorage.getItem('shrimp.costinc'));
 				shrimp.power = Number(localStorage.getItem('shrimp.power'));
-				squid.count = Number(localStorage.getItem('squid.count'));
-				squid.cost = Number(localStorage.getItem('squid.cost'));
-				squid.costinc = Number(localStorage.getItem('squid.costinc'));
-				squid.power = Number(localStorage.getItem('squid.power'));
 					//inventory reload 
 				if(daisy.count>0) {
 					document.getElementById('inventory').style.display = 'inline';
-					document.getElementById('daisiescounter').style.display = 'inline';
 				}
-				if(tulip.count>0) {
-					document.getElementById('tulipscounter').style.display = 'inline';
+					//objects reload 
+	
+				if(daisy.count>0) {
+					document.getElementById('daisycounter').style.display = 'inline';
 				}
-				if(rose.count>0) {
-					document.getElementById('rosescounter').style.display = 'inline';
+								if(tulip.count>0) {
+					document.getElementById('tulipcounter').style.display = 'inline';
+				}				if(rose.count>0) {
+					document.getElementById('rosecounter').style.display = 'inline';
+				}				if(sunflower.count>0) {
+					document.getElementById('sunflowercounter').style.display = 'inline';
+				}				if(cactus.count>0) {
+					document.getElementById('cactuscounter').style.display = 'inline';
+				}				if(parrot.count>0) {
+					document.getElementById('parrotcounter').style.display = 'inline';
+				}				if(duck.count>0) {
+					document.getElementById('duckcounter').style.display = 'inline';
+				}				if(cat.count>0) {
+					document.getElementById('catcounter').style.display = 'inline';
+				}				if(dog.count>0) {
+					document.getElementById('dogcounter').style.display = 'inline';
+				}				if(bear.count>0) {
+					document.getElementById('bearcounter').style.display = 'inline';
+				}				if(turtle.count>0) {
+					document.getElementById('turtlecounter').style.display = 'inline';
+				}				if(bunny.count>0) {
+					document.getElementById('bunnycounter').style.display = 'inline';
+				}				if(starfish.count>0) {
+					document.getElementById('starfishcounter').style.display = 'inline';
+				}				if(wateringcan.count>0) {
+					document.getElementById('wateringcancounter').style.display = 'inline';
+				}				if(birdfeeder.count>0) {
+					document.getElementById('birdfeedercounter').style.display = 'inline';
+				}				if(lipstick.count>0) {
+					document.getElementById('lipstickcounter').style.display = 'inline';
+				}				if(monkey.count>0) {
+					document.getElementById('monkeycounter').style.display = 'inline';
+				}				if(tiger.count>0) {
+					document.getElementById('tigercounter').style.display = 'inline';
+				}				if(jackass.count>0) {
+					document.getElementById('jackasscounter').style.display = 'inline';
+				}				if(horse.count>0) {
+					document.getElementById('horsecounter').style.display = 'inline';
+				}				if(zebra.count>0) {
+					document.getElementById('zebracounter').style.display = 'inline';
+				}				if(deer.count>0) {
+					document.getElementById('deercounter').style.display = 'inline';
+				}				if(cow.count>0) {
+					document.getElementById('cowcounter').style.display = 'inline';
+				}				if(pig.count>0) {
+					document.getElementById('pigcounter').style.display = 'inline';
+				}				if(sheep.count>0) {
+					document.getElementById('sheepcounter').style.display = 'inline';
+				}				if(camel.count>0) {
+					document.getElementById('camelcounter').style.display = 'inline';
+				}				if(giraffe.count>0) {
+					document.getElementById('giraffecounter').style.display = 'inline';
+				}				if(elephant.count>0) {
+					document.getElementById('elephantcounter').style.display = 'inline';
+				}				if(hedgehog.count>0) {
+					document.getElementById('hedgehogcounter').style.display = 'inline';
+				}				if(bat.count>0) {
+					document.getElementById('batcounter').style.display = 'inline';
+				}				if(sloth.count>0) {
+					document.getElementById('slothcounter').style.display = 'inline';
+				}				if(otter.count>0) {
+					document.getElementById('ottercounter').style.display = 'inline';
+				}				if(kangaroo.count>0) {
+					document.getElementById('kangaroocounter').style.display = 'inline';
+				}				if(hatchling.count>0) {
+					document.getElementById('hatchlingcounter').style.display = 'inline';
+				}				if(baby.count>0) {
+					document.getElementById('babycounter').style.display = 'inline';
+				}				if(songbird.count>0) {
+					document.getElementById('songbirdcounter').style.display = 'inline';
+				}				if(penguin.count>0) {
+					document.getElementById('penguincounter').style.display = 'inline';
+				}				if(dove.count>0) {
+					document.getElementById('dovecounter').style.display = 'inline';
+				}				if(swan.count>0) {
+					document.getElementById('swancounter').style.display = 'inline';
+				}				if(owl.count>0) {
+					document.getElementById('owlcounter').style.display = 'inline';
+				}				if(dodo.count>0) {
+					document.getElementById('dodocounter').style.display = 'inline';
+				}				if(flamingo.count>0) {
+					document.getElementById('flamingocounter').style.display = 'inline';
+				}				if(peacock.count>0) {
+					document.getElementById('peacockcounter').style.display = 'inline';
+				}				if(blackbird.count>0) {
+					document.getElementById('blackbirdcounter').style.display = 'inline';
+				}				if(chicken.count>0) {
+					document.getElementById('chickencounter').style.display = 'inline';
+				}				if(goose.count>0) {
+					document.getElementById('goosecounter').style.display = 'inline';
+				}				if(phoenix.count>0) {
+					document.getElementById('phoenixcounter').style.display = 'inline';
+				}				if(lizard.count>0) {
+					document.getElementById('lizardcounter').style.display = 'inline';
+				}				if(dragon.count>0) {
+					document.getElementById('dragoncounter').style.display = 'inline';
+				}				if(whale.count>0) {
+					document.getElementById('whalecounter').style.display = 'inline';
+				}				if(dolphin.count>0) {
+					document.getElementById('dolphincounter').style.display = 'inline';
+				}				if(seal.count>0) {
+					document.getElementById('sealcounter').style.display = 'inline';
+				}				if(betta.count>0) {
+					document.getElementById('bettacounter').style.display = 'inline';
+				}				if(tropical.count>0) {
+					document.getElementById('tropicalcounter').style.display = 'inline';
+				}				if(pufferfish.count>0) {
+					document.getElementById('pufferfishcounter').style.display = 'inline';
+				}				if(shark.count>0) {
+					document.getElementById('sharkcounter').style.display = 'inline';
+				}				if(octopus.count>0) {
+					document.getElementById('octopuscounter').style.display = 'inline';
+				}				if(jellyfish.count>0) {
+					document.getElementById('jellyfishcounter').style.display = 'inline';
+				}				if(bee.count>0) {
+					document.getElementById('beecounter').style.display = 'inline';
+				}				if(shrimp.count>0) {
+					document.getElementById('shrimpcounter').style.display = 'inline';
 				}
-				if(sunflower.count>0) {
-					document.getElementById('sunflowerscounter').style.display = 'inline';
-				}
+			
 				
-				
-				
-				mess = "Game loaded! You'll have to buy items to see them in your inventory again, but you still have everything :)"			
+				mess = 'Game loaded! Welcome back!'			
 			});
 				
 
