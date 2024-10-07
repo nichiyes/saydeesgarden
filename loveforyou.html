@@ -1,0 +1,115 @@
+<!DOCTYPE html><html lang='en'><head><meta charset='UTF-8'><meta name='viewport' content='width=device-width, initial-scale=1.0'> 
+  <link rel='icon' type='image/x-icon' href='/favicon.ico'>
+  <title>LOVE FOR YOU</title> 
+  <style>
+    body { 
+        font-family: Comic Sans, cursive; 
+        background-color: #fdfd96; 
+		margin: 0; 
+        padding: 5px; 
+            } 
+	h1 { 
+		color: #220000; 
+		text-align: center;
+        } 
+	h3 {
+				color: #111111;
+				text-align: left;
+			}	
+	h4 {
+				color: #222222;
+				text-align: left;
+			}
+    button { 
+                padding: 10px 15px; 
+                font-size: 64px; 
+                cursor: pointer;
+				border-style: groove;				<!--options: solid, dotted, dashed, double, groove, ridge, inset, outset, none, hidden-->
+				border-width: 2px;
+				border-radius: 10px;
+				background-color: #ffffcc;
+				border-color: #eeeebb;
+            } 
+	div {
+				margin: auto;
+				color: #000000;
+				text-align: center;
+				padding: 1px;
+				font-size: 64px;
+			}
+</style> 
+</head> 
+<body> 
+		<h1>LOVE FOR YOU</h1> 
+		
+		
+		<div id='messages' style='background-color:#FFDD70;border-style:groove;border-color:#dddd66'> 
+		<!--js will fill content-->
+		</div>
+		
+		<div id='emoji'> 
+			<button id='heart'>🥰</button>
+			<button id='smile'>😊</button>
+			<button id='kiss'>😘</button>
+		</div>
+	
+<script> 
+var mess;
+var rando;
+function rndInt(max) {
+  return Math.floor(Math.random() * (max));
+};
+
+const heartl = ['Smooch!'];
+const kissl = ['Your face looks comfy for my booty'];
+const smilel = ['You have such a beautiful smile'];
+heartl.push('Smoochie!');
+
+//lists of variable words:   const VARIABLENAME = [list of synonyms or whatever]
+const MY = ['cutie', 'love', 'Say', 'Sayshine', 'muse', 'squishy', 'squishee', 'best friend', 'bestest friend']
+const U = ['you', 'u'];
+const UR = ['Ur', 'You\'re', 'U\'re', 'U', 'You', 'U r', 'You are'] 
+const LOVE = ['love', 'luv', '❤️'];
+const SEXY = ['sexy', 'yummy', 'fun', 'going to be jelly when I\'m done with you', 'hot']
+const VERY = ['so', 'very', 'so damn', 'damn fucking', 'so very', 'extremely', '', 'so fucking', 'fucking']
+const PRETTY = ['pretty', 'cute', 'gorgeous', 'beautiful']
+
+for (let i=0; i<UR.length; i++) {
+	for (let j=0; j<VERY.length; j++) {
+		for (let k=0; k<SEXY.length; k++) {
+			kissl.push(UR[i] + ' ' + VERY[j] + ' ' + SEXY[k]);
+			};
+		};
+	};
+
+for (let i=0; i<UR.length; i++) {
+	for (let j=0; j<VERY.length; j++) {
+		for (let k=0; k<PRETTY.length; k++) {
+			smilel.push(UR[i] + ' ' + VERY[j] + ' ' + PRETTY[k]);
+			};
+		};
+	};
+
+for (let i=0; i<U.length; i++) {
+	for (let j=0; j<LOVE.length; j++) {
+		heartl.push('I ' + LOVE[j] + ' ' + U[i]);
+		};
+	};
+
+
+
+//button activities
+	document.getElementById('heart').addEventListener('click', function() {     
+				document.getElementById('messages').innerHTML = heartl[rndInt(heartl.length)];
+			}); 
+	document.getElementById('kiss').addEventListener('click', function() {     
+				document.getElementById('messages').innerHTML = kissl[rndInt(kissl.length)];
+			}); 
+	document.getElementById('smile').addEventListener('click', function() {     
+				document.getElementById('messages').innerHTML = smilel[rndInt(smilel.length)];
+			}); 
+
+
+</script> 
+</body> 
+</html> 
